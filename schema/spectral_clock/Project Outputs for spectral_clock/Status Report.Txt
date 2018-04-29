@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [spectral_clock.PrjPcb]
+   Generated File[spectral_clock.TXT]
+   Generated File[spectral_clock.LDP]
+   Generated File[spectral_clock.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 20:58:32 On 2018-04-29

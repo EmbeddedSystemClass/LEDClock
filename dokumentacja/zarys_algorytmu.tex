@@ -1,0 +1,3 @@
+\let\clearpage\relax
+\chapter{Zarys algorytmu}
+Na obudowie urz¹dzenia zostanie zamontowana fotodioda lub czujnik Halla, który bêdzie wykrywa³ moment wykonania pe³nego obrotu przez wskazówkê. Podczas wykrycia przys³oniêcia fotodiody lub czujnika mikrokontroler w³¹czy timer, który zliczy milisekundy do czasu kolejnego oczytu z czujnika - jest to czas pe³nego obrotu wskazówki. Kolejnym krokiem bêdzie ustawienie przerwañ od timera na (czas~pe³nego~obrotu) / 360. Mikrokontroler w funkcji obs³ugi przerwania bêdzie aktualizowa³ stan diod w zale¿noœci od wybranego obrazu.

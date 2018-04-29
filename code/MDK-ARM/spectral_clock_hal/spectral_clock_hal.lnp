@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"spectral_clock_hal\startup_stm32f103xb.o"
+"spectral_clock_hal\stm32f1xx_hal_gpio.o"
+"spectral_clock_hal\stm32f1xx_hal_rtc_ex.o"
+"spectral_clock_hal\stm32f1xx_hal_dma.o"
+"spectral_clock_hal\stm32f1xx_hal_flash_ex.o"
+"spectral_clock_hal\stm32f1xx_hal_rcc_ex.o"
+"spectral_clock_hal\stm32f1xx_hal_adc_ex.o"
+"spectral_clock_hal\stm32f1xx_hal_flash.o"
+"spectral_clock_hal\stm32f1xx_hal_tim_ex.o"
+"spectral_clock_hal\stm32f1xx_hal_cortex.o"
+"spectral_clock_hal\stm32f1xx_hal.o"
+"spectral_clock_hal\stm32f1xx_hal_adc.o"
+"spectral_clock_hal\stm32f1xx_hal_gpio_ex.o"
+"spectral_clock_hal\stm32f1xx_hal_rcc.o"
+"spectral_clock_hal\stm32f1xx_hal_pwr.o"
+"spectral_clock_hal\stm32f1xx_hal_rtc.o"
+"spectral_clock_hal\stm32f1xx_hal_tim.o"
+"spectral_clock_hal\stm32f1xx_it.o"
+"spectral_clock_hal\main.o"
+"spectral_clock_hal\stm32f1xx_hal_msp.o"
+"spectral_clock_hal\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "spectral_clock_hal\spectral_clock_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "spectral_clock_hal.map" -o spectral_clock_hal\spectral_clock_hal.axf

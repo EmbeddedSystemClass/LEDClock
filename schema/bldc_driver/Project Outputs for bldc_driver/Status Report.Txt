@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [bldc_driver.PrjPCB]
+   Generated File[bldc_driver.TXT]
+   Generated File[bldc_driver.LDP]
+   Generated File[bldc_driver.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 21:10:00 On 2018-04-29

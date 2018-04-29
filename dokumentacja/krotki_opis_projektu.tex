@@ -1,0 +1,10 @@
+% !TEX encoding = cp1250
+\chapter{Krótki opis projektu}
+
+Ludzkie oko nie jest w stanie rozró¿niæ migania od obrazu ciag³ego przy czêstotliwoœci wiêkszej ni¿ 20Hz. Zegar widmowy jest urz¹dzeniem, które rozkrêcaj¹c do wysokich obrotów wskazówkê, na której s¹ zamontowane diody i w odpowidnich chwilach w³¹czaj¹c je i wy³¹czaj¹c wprowadza efekt ci¹g³oœci obrazu co pozwala wyœwietliæ na nim ró¿ne ciekawe animacje. Decyzja o tym kiedy w³¹czyæ i wy³¹czyæ diody nale¿y do mikrokontrolera  umieszczonego na wskazówce. Wskazówka zostanie przymocowana do silnika bldc z twardego dysku. Bardzo wa¿n¹ czêœci¹ projektu jest wybór sposobu zasilania. O ile sam silnik mo¿e byæ zasilony zasilaczem do telefonu lub laptopa to, kwestia zasilenia p³yty umieszczonej na wskazówce jest dosyæ problematyczna. S¹ trzy sposoby z ró¿nymi wadami i zaletami:
+\begin{enumerate}[label=\arabic*]
+	\item \textbf{Zasilanie z baterii umieszczonej na wskazówce. Zalet¹ jest prostota, ale drastycznie zwiêkszy to masê wskazówki;}
+	\item \textbf{Zasilanie szczotkowe - generuje niepotrzebny ha³as;}
+	\item \textbf{Zasilanie indukcyjne;}
+\end{enumerate}
+Wybra³em zasilanie indukcyjne, gdy¿ ma ono najwiêcej zalet i równie¿ jest pewnym wyzwaniem konstrukcyjnym. Na wa³ silnika zostanie nawiniêta cewka, na której zaciskach wytworzy siê napiêcie z powodu wiruj¹cego pola magnetycznego. "ród³em" pola magnetycznego bêdzie kolejna cewka zamontowana na stojanie - jej zaciski bêd¹ przyczepione bezpoœrednio do baterii. Wybór animacji bêdzie mo¿liwy za pomoc¹ aplikacji mobilnej, która z zegarem bêdzie komunikowa³a siê za pomoc¹ modu³u bluetooth. G³ówn¹ animacj¹ bêdzie wyœwietlany czas i data. Mo¿liwoœæ wgrania kolejnych bêdzie mo¿liwa za poœrednictwem karty SD. 
