@@ -2,23 +2,14 @@
 FileName = bldc_driver.GBR
 AutoAperture = True
 *************************************************************
-Generating : Mechanical 13
-      File : bldc_driver.GM13
+Generating : Keep-Out Layer
+      File : bldc_driver.GKO
 
-    Adding Layer      : Mechanical 13
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : bldc_driver.GBO
-
-    Adding Layer      : Bottom Overlay
+    Adding Layer      : Keep-Out Layer
 
 
 Used DCodes :
+    D11
 *************************************************************
 
 *************************************************************
@@ -47,13 +38,38 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 1
-      File : bldc_driver.GM1
+Generating : Mechanical 13
+      File : bldc_driver.GM13
 
-    Adding Layer      : Mechanical 1
+    Adding Layer      : Mechanical 13
 
 
 Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : bldc_driver.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : bldc_driver.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
 *************************************************************
 
 *************************************************************
@@ -75,32 +91,6 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Top Overlay
-      File : bldc_driver.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-*************************************************************
-
-*************************************************************
-Generating : Keep-Out Layer
-      File : bldc_driver.GKO
-
-    Adding Layer      : Keep-Out Layer
-
-
-Used DCodes :
-    D11
-*************************************************************
-
-*************************************************************
 Generating : Bottom Layer
       File : bldc_driver.GBL
 
@@ -115,6 +105,16 @@ Used DCodes :
     D37
     D38
     D39
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : bldc_driver.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
 *************************************************************
 
 *************************************************************

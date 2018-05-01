@@ -1,9 +1,9 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Jakub Wieczorek\Desktop\studia\SMS\spectral_clock\schema\bldc_driver\bldc_driver.PcbDoc
-Date     : 2018-04-29
-Time     : 21:08:01
+Date     : 2018-05-01
+Time     : 14:43:54
 
-Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Processing Rule : Clearance Constraint (Gap=0.127mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
@@ -15,38 +15,38 @@ Rule Violations :0
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=5mil) (Max=100mil) (Preferred=30mil) (All)
+Processing Rule : Width Constraint (Min=0.127mm) (Max=2.54mm) (Preferred=0.762mm) (All)
 Rule Violations :0
 
-Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=6.024mil) (All)
+Processing Rule : Minimum Annular Ring (Minimum=0.153mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=255.905mil) (All)
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.5mm) (All)
 Rule Violations :0
 
-Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Silk To Solder Mask (Clearance=4.921mil) (IsPad),(All)
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 4.921mil) Between Pad LED1-1(3031.496mil,2165.354mil) on Top Layer And Track (3011.811mil,2125.984mil)(3011.811mil,2145.669mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 4.921mil) Between Pad LED1-1(3031.496mil,2165.354mil) on Top Layer And Track (3011.811mil,2185.039mil)(3011.811mil,2204.724mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (1.742mil < 4.921mil) Between Pad LED1-2(2874.016mil,2165.354mil) on Top Layer And Track (2893.701mil,2125.984mil)(2893.701mil,2145.669mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [1.742mil]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 4.921mil) Between Pad LED1-2(2874.016mil,2165.354mil) on Top Layer And Track (2893.701mil,2185.039mil)(2893.701mil,2204.724mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]
+Processing Rule : Silk To Solder Mask (Clearance=0.125mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.125mm) Between Pad LED1-1(77mm,55mm) on Top Layer And Track (76.5mm,54mm)(76.5mm,54.5mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.125mm) Between Pad LED1-1(77mm,55mm) on Top Layer And Track (76.5mm,55.5mm)(76.5mm,56mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.044mm < 0.125mm) Between Pad LED1-2(73mm,55mm) on Top Layer And Track (73.5mm,54mm)(73.5mm,54.5mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.044mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.125mm) Between Pad LED1-2(73mm,55mm) on Top Layer And Track (73.5mm,55.5mm)(73.5mm,56mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
 Rule Violations :4
 
-Processing Rule : Silk to Silk (Clearance=4.921mil) (All),(All)
+Processing Rule : Silk to Silk (Clearance=0.125mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
 Rule Violations :0
 
-Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
