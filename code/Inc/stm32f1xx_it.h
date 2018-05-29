@@ -58,10 +58,7 @@ void PendSV_Handler(void);
 void SysTick_Handler(void);
 void PVD_IRQHandler(void);
 void FLASH_IRQHandler(void);
-void EXTI1_IRQHandler(void);
-void ADC1_2_IRQHandler(void);
 void TIM4_IRQHandler(void);
-void EXTI15_10_IRQHandler(void);
 
 #ifdef __cplusplus
 }

@@ -20,8 +20,6 @@ spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm3
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
-spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h
-spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
@@ -29,3 +27,4 @@ spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm3
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+spectral_clock_hal\stm32f1xx_hal_tim.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
