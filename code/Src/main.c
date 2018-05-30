@@ -106,6 +106,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	htim4.Instance->CNT = 0;
 	HAL_TIM_Base_Start_IT(&htim4);
+	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_1);
+	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_2);
+	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_3);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -263,10 +268,22 @@ static void MX_TIM4_Init(void)
   }
 
   sConfigOC.OCMode = TIM_OCMODE_TIMING;
-  sConfigOC.Pulse = 5000;
+  sConfigOC.Pulse = 2500;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   if (HAL_TIM_OC_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sConfigOC.Pulse = 5000;
+  if (HAL_TIM_OC_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sConfigOC.Pulse = 7500;
+  if (HAL_TIM_OC_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }

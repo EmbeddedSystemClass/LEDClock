@@ -227,10 +227,7 @@ void FLASH_IRQHandler(void)
 void TIM4_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM4_IRQn 0 */
-	//HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+
   /* USER CODE END TIM4_IRQn 0 */
   HAL_TIM_IRQHandler(&htim4);
   /* USER CODE BEGIN TIM4_IRQn 1 */
@@ -239,6 +236,39 @@ void TIM4_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
+
+void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	switch(htim4.Channel)
+	{
+		case HAL_TIM_ACTIVE_CHANNEL_1:
+		{
+			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+
+			break;
+		}
+		case HAL_TIM_ACTIVE_CHANNEL_2:
+		{
+			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
+
+			break;
+		}
+		case HAL_TIM_ACTIVE_CHANNEL_3:
+		{
+			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
+
+			break;
+		}
+		case HAL_TIM_ACTIVE_CHANNEL_4:
+		{
+			break;
+		}
+		default:
+		{
+			break;
+		}
+	}
+}
 
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
