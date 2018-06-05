@@ -2,6 +2,66 @@
 FileName = spectral_clock.GBR
 AutoAperture = True
 *************************************************************
+Generating : Mechanical 13
+      File : spectral_clock.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D70
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : spectral_clock.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D14
+    D15
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : spectral_clock.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+*************************************************************
+
+*************************************************************
 Generating : Bottom Layer
       File : spectral_clock.GBL
 
@@ -28,70 +88,6 @@ Used DCodes :
     D63
     D64
     D65
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : spectral_clock.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D66
-    D67
-    D68
-*************************************************************
-
-*************************************************************
-Generating : Keep-Out Layer
-      File : spectral_clock.GKO
-
-    Adding Layer      : Keep-Out Layer
-
-
-Used DCodes :
-    D55
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 13
-      File : spectral_clock.GM13
-
-    Adding Layer      : Mechanical 13
-
-
-Used DCodes :
-    D70
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : spectral_clock.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
 *************************************************************
 
 *************************************************************
@@ -157,45 +153,29 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Overlay
-      File : spectral_clock.GBO
+Generating : Keep-Out Layer
+      File : spectral_clock.GKO
 
-    Adding Layer      : Bottom Overlay
+    Adding Layer      : Keep-Out Layer
 
 
 Used DCodes :
-    D10
-    D11
-    D14
-    D15
-    D16
+    D55
 *************************************************************
 
 *************************************************************
-Generating : Top Solder
-      File : spectral_clock.GTS
+Generating : Bottom Solder
+      File : spectral_clock.GBS
 
-    Adding Layer      : Top Solder
+    Adding Layer      : Bottom Solder
 
-    Adding Layer      : Top Layer
+    Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D17
     D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
     D30
     D31
     D32
@@ -203,5 +183,25 @@ Used DCodes :
     D34
     D35
     D36
+    D66
+    D67
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : spectral_clock.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
 *************************************************************
 
