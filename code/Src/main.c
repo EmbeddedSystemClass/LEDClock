@@ -67,6 +67,10 @@ static void MX_TIM3_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	
+}
 
 /* USER CODE END PFP */
 
@@ -142,6 +146,24 @@ int main(void)
 	
   while (1)
   {
+		switch(state)
+		{
+			case SET_LED:
+			{
+				HAL_GPIO_TogglePin(U2_upper.leds[U6].GPIOx, U2_upper.leds[U6].pin);
+				latch_data(U2_upper);
+				
+				state = NOTHING;
+			}
+			case NOTHING:
+			{
+				
+			}
+			default:
+			{
+				state = NOTHING;
+			}
+		}
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
@@ -395,7 +417,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PA0 */
   GPIO_InitStruct.Pin = GPIO_PIN_0;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -418,6 +440,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI0_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 
 }
 

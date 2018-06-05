@@ -203,7 +203,6 @@ void SysTick_Handler(void)
 void PVD_IRQHandler(void)
 {
   /* USER CODE BEGIN PVD_IRQn 0 */
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
   /* USER CODE END PVD_IRQn 0 */
   HAL_PWR_PVD_IRQHandler();
   /* USER CODE BEGIN PVD_IRQn 1 */
@@ -223,6 +222,20 @@ void FLASH_IRQHandler(void)
   /* USER CODE BEGIN FLASH_IRQn 1 */
 
   /* USER CODE END FLASH_IRQn 1 */
+}
+
+/**
+* @brief This function handles EXTI line0 interrupt.
+*/
+void EXTI0_IRQHandler(void)
+{
+  /* USER CODE BEGIN EXTI0_IRQn 0 */
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+  /* USER CODE END EXTI0_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
+  /* USER CODE BEGIN EXTI0_IRQn 1 */
+
+  /* USER CODE END EXTI0_IRQn 1 */
 }
 
 /**
