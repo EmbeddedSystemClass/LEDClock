@@ -36,10 +36,14 @@
 #include "stm32f1xx_it.h"
 
 /* USER CODE BEGIN 0 */
+#include "service.h"
+extern led_latch_t U2_upper;
+extern state_t state;
 
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern TIM_HandleTypeDef htim3;
 extern TIM_HandleTypeDef htim4;
 
 /******************************************************************************/
@@ -222,12 +226,26 @@ void FLASH_IRQHandler(void)
 }
 
 /**
+* @brief This function handles TIM3 global interrupt.
+*/
+void TIM3_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM3_IRQn 0 */
+	state = SET_LED;
+  /* USER CODE END TIM3_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim3);
+  /* USER CODE BEGIN TIM3_IRQn 1 */
+
+  /* USER CODE END TIM3_IRQn 1 */
+}
+
+/**
 * @brief This function handles TIM4 global interrupt.
 */
 void TIM4_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM4_IRQn 0 */
-
+	
   /* USER CODE END TIM4_IRQn 0 */
   HAL_TIM_IRQHandler(&htim4);
   /* USER CODE BEGIN TIM4_IRQn 1 */
@@ -245,27 +263,25 @@ void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
 		{
 			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
 
-			break;
+			return;
 		}
 		case HAL_TIM_ACTIVE_CHANNEL_2:
 		{
 			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
-
-			break;
+			return;
 		}
 		case HAL_TIM_ACTIVE_CHANNEL_3:
 		{
 			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
 
-			break;
+			return;
 		}
 		case HAL_TIM_ACTIVE_CHANNEL_4:
 		{
-			break;
+			return;
 		}
 		default:
 		{
-			break;
 		}
 	}
 }

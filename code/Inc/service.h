@@ -4,14 +4,11 @@
 
 #include "stm32f1xx_hal.h"
 
-// leds
-enum {U7 = 2};
-
 // program states
-typedef enum STATE {SET_LED, NOTHING, SET_HIGH_BIT, SET_LOW_BIT} state_t;
+typedef enum STATE {SET_LED, NOTHING} state_t;
 
-// model
-enum {U9};
+// leds
+enum {U6 = 3};
 
 typedef struct LED
 {
@@ -24,10 +21,10 @@ typedef struct LED_LATCH
 	GPIO_TypeDef* GPIOx;
 	uint16_t pin;
 	
-	led_t leds[1];
+	led_t leds[8];
 } led_latch_t;
 
 // service functions
-//void start_picture_timer();
+void latch_data(led_latch_t a_latch);
 
 #endif

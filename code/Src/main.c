@@ -40,19 +40,21 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "service.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
 RTC_HandleTypeDef hrtc;
 
+TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim4;
 
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+led_latch_t U2_upper;
+state_t state;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -61,6 +63,7 @@ static void MX_GPIO_Init(void);
 static void MX_RTC_Init(void);
 static void MX_TIM4_Init(void);
 static void MX_USART1_UART_Init(void);
+static void MX_TIM3_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -68,7 +71,23 @@ static void MX_USART1_UART_Init(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
+void init()
+{
+	// U2
+	U2_upper.GPIOx = GPIOB;
+	U2_upper.pin = GPIO_PIN_10;
 
+	// U6
+	led_t u6;
+	u6.pin = GPIO_PIN_7;
+	u6.GPIOx = GPIOA;
+	
+	// U2 leds
+	U2_upper.leds[U6] = u6;
+	
+	// begin state
+	state = SET_LED;
+}
 /* USER CODE END 0 */
 
 /**
@@ -88,7 +107,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+	init();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -103,26 +122,47 @@ int main(void)
   MX_RTC_Init();
   MX_TIM4_Init();
   MX_USART1_UART_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 	htim4.Instance->CNT = 0;
-	HAL_TIM_Base_Start_IT(&htim4);
-	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_1);
-	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_2);
-	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_3);
-
-
+	//HAL_TIM_Base_Start_IT(&htim4);
+//	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_1);
+//	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_2);
+//	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_3);
+//	
+	htim3.Instance->CNT = 0;
+	HAL_TIM_Base_Start_IT(&htim3);
+	HAL_TIM_Base_Start(&htim3);
+	HAL_TIM_Base_Start(&htim4);
+	
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	
   while (1)
   {
-
   /* USER CODE END WHILE */
-
+		switch(state)
+		{
+			case SET_LED:
+			{
+				HAL_GPIO_TogglePin(U2_upper.leds[U6].GPIOx, U2_upper.leds[U6].pin);
+				latch_data(U2_upper);
+				
+				state = NOTHING;
+			}
+			case NOTHING:
+			{
+				
+			}
+			default:
+			{
+				state = NOTHING;
+			}
+		}
   /* USER CODE BEGIN 3 */
-
-  }
+	}
   /* USER CODE END 3 */
 
 }
@@ -226,6 +266,39 @@ static void MX_RTC_Init(void)
   }
 
     HAL_RTCEx_BKUPWrite(&hrtc,RTC_BKP_DR1,0x32F2);
+  }
+
+}
+
+/* TIM3 init function */
+static void MX_TIM3_Init(void)
+{
+
+  TIM_ClockConfigTypeDef sClockSourceConfig;
+  TIM_MasterConfigTypeDef sMasterConfig;
+
+  htim3.Instance = TIM3;
+  htim3.Init.Prescaler = 7200 - 1;
+  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim3.Init.Period = 13000;
+  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
   }
 
 }
