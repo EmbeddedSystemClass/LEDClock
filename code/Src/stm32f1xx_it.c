@@ -36,15 +36,11 @@
 #include "stm32f1xx_it.h"
 
 /* USER CODE BEGIN 0 */
-#include "service.h"
-extern led_latch_t U2_upper;
-extern state_t state;
-
+extern TIM_HandleTypeDef htim4;
+extern TIM_HandleTypeDef htim3;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern TIM_HandleTypeDef htim3;
-extern TIM_HandleTypeDef htim4;
 
 /******************************************************************************/
 /*            Cortex-M3 Processor Interruption and Exception Handlers         */ 
@@ -230,7 +226,7 @@ void FLASH_IRQHandler(void)
 void EXTI0_IRQHandler(void)
 {
   /* USER CODE BEGIN EXTI0_IRQn 0 */
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
+
   /* USER CODE END EXTI0_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
   /* USER CODE BEGIN EXTI0_IRQn 1 */
@@ -244,7 +240,7 @@ void EXTI0_IRQHandler(void)
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
-	state = SET_LED;
+
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
   /* USER CODE BEGIN TIM3_IRQn 1 */
@@ -267,37 +263,6 @@ void TIM4_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
-
-void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
-{
-	switch(htim4.Channel)
-	{
-		case HAL_TIM_ACTIVE_CHANNEL_1:
-		{
-			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
-
-			return;
-		}
-		case HAL_TIM_ACTIVE_CHANNEL_2:
-		{
-			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_4);
-			return;
-		}
-		case HAL_TIM_ACTIVE_CHANNEL_3:
-		{
-			HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-
-			return;
-		}
-		case HAL_TIM_ACTIVE_CHANNEL_4:
-		{
-			return;
-		}
-		default:
-		{
-		}
-	}
-}
 
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

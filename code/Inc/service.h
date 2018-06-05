@@ -5,7 +5,7 @@
 #include "stm32f1xx_hal.h"
 
 // program states
-typedef enum STATE {SET_LED, NOTHING} state_t;
+typedef enum STATE {SET_LED, UPDATE_TIME, NOTHING} state_t;
 
 // leds
 enum {U6 = 3};

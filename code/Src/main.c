@@ -67,10 +67,6 @@ static void MX_TIM3_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-	
-}
 
 /* USER CODE END PFP */
 
