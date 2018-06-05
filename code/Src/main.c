@@ -143,24 +143,7 @@ int main(void)
   while (1)
   {
   /* USER CODE END WHILE */
-		switch(state)
-		{
-			case SET_LED:
-			{
-				HAL_GPIO_TogglePin(U2_upper.leds[U6].GPIOx, U2_upper.leds[U6].pin);
-				latch_data(U2_upper);
-				
-				state = NOTHING;
-			}
-			case NOTHING:
-			{
-				
-			}
-			default:
-			{
-				state = NOTHING;
-			}
-		}
+
   /* USER CODE BEGIN 3 */
 	}
   /* USER CODE END 3 */

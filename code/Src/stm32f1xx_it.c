@@ -203,7 +203,7 @@ void SysTick_Handler(void)
 void PVD_IRQHandler(void)
 {
   /* USER CODE BEGIN PVD_IRQn 0 */
-
+	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_3);
   /* USER CODE END PVD_IRQn 0 */
   HAL_PWR_PVD_IRQHandler();
   /* USER CODE BEGIN PVD_IRQn 1 */
