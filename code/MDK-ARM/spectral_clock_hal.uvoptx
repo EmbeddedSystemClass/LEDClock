@@ -155,9 +155,15 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>180</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134225746</Address>
+=======
+          <LineNumber>179</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134225734</Address>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -166,14 +172,24 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>../Src/main.c</Filename>
           <ExecCommand></ExecCommand>
+<<<<<<< HEAD
           <Expression>\\spectral_clock_hal\../Src/main.c\180</Expression>
+=======
+          <Expression>\\spectral_clock_hal\../Src/main.c\179</Expression>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>172</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134225736</Address>
+=======
+          <LineNumber>171</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134225724</Address>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -182,14 +198,24 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>../Src/main.c</Filename>
           <ExecCommand></ExecCommand>
+<<<<<<< HEAD
           <Expression>\\spectral_clock_hal\../Src/main.c\172</Expression>
+=======
+          <Expression>\\spectral_clock_hal\../Src/main.c\171</Expression>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
         </Bp>
         <Bp>
           <Number>2</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>162</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134225664</Address>
+=======
+          <LineNumber>161</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134225652</Address>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -198,14 +224,24 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>../Src/main.c</Filename>
           <ExecCommand></ExecCommand>
+<<<<<<< HEAD
           <Expression>\\spectral_clock_hal\../Src/main.c\162</Expression>
+=======
+          <Expression>\\spectral_clock_hal\../Src/main.c\161</Expression>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
         </Bp>
         <Bp>
           <Number>3</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>155</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134225638</Address>
+=======
+          <LineNumber>81</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134225464</Address>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -214,14 +250,24 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>../Src/main.c</Filename>
           <ExecCommand></ExecCommand>
+<<<<<<< HEAD
           <Expression>\\spectral_clock_hal\../Src/main.c\155</Expression>
+=======
+          <Expression>\\spectral_clock_hal\../Src/main.c\81</Expression>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
         </Bp>
         <Bp>
           <Number>4</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>81</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>134225464</Address>
+=======
+          <LineNumber>154</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>134225626</Address>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -230,12 +276,20 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>../Src/main.c</Filename>
           <ExecCommand></ExecCommand>
+<<<<<<< HEAD
           <Expression>\\spectral_clock_hal\../Src/main.c\81</Expression>
+=======
+          <Expression>\\spectral_clock_hal\../Src/main.c\154</Expression>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
         </Bp>
         <Bp>
           <Number>5</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>11</LineNumber>
+=======
+          <LineNumber>155</LineNumber>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -244,14 +298,21 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
+<<<<<<< HEAD
           <Filename>..\Src\callbacks.c</Filename>
+=======
+          <Filename>../Src/main.c</Filename>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
         <Bp>
           <Number>6</Number>
           <Type>0</Type>
+<<<<<<< HEAD
           <LineNumber>22</LineNumber>
+=======
+          <LineNumber>162</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -260,7 +321,44 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
+          <Filename>../Src/main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>7</Number>
+          <Type>0</Type>
+          <LineNumber>172</LineNumber>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+<<<<<<< HEAD
           <Filename>..\Src\callbacks.c</Filename>
+=======
+          <Filename>../Src/main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>8</Number>
+          <Type>0</Type>
+          <LineNumber>180</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>../Src/main.c</Filename>
+>>>>>>> a2f843f9556771e0cb538de5bc48e8bf8830497d
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
