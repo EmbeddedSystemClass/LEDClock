@@ -1,5 +1,5 @@
-spectral_clock_hal\service.o: ..\lib\service.c
-spectral_clock_hal\service.o: ..\lib\service.h
+spectral_clock_hal\service.o: ..\Src\service.c
+spectral_clock_hal\service.o: ../Inc/service.h
 spectral_clock_hal\service.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 spectral_clock_hal\service.o: ../Inc/stm32f1xx_hal_conf.h
 spectral_clock_hal\service.o: ../Inc/main.h

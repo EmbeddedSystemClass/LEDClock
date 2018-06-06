@@ -41,6 +41,8 @@
 
 /* USER CODE BEGIN Includes */
 #include "service.h"
+#include "test.h"
+#include "pictures.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -55,6 +57,8 @@ UART_HandleTypeDef huart1;
 /* Private variables ---------------------------------------------------------*/
 led_latch_t U2_upper;
 state_t state;
+engine_tim_t engine_tim;
+picture_tim_t picture_tim;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -76,7 +80,8 @@ void init()
 	// U2
 	U2_upper.GPIOx = GPIOB;
 	U2_upper.pin = GPIO_PIN_10;
-
+	U2_upper.step = 0;
+	
 	// U6
 	led_t u6;
 	u6.pin = GPIO_PIN_7;
@@ -86,7 +91,20 @@ void init()
 	U2_upper.leds[U6] = u6;
 	
 	// begin state
-	state = SET_LED;
+	state = NOTHING;
+	
+	// engine
+	engine_tim.ratio_time = 0;
+	engine_tim.htim = &htim4;
+	
+	//resolution
+	picture_tim.resolution = 2;
+	picture_tim.resolution_time = 0;
+	picture_tim.htim = &htim3;
+	
+	engine_tim.htim->Instance->CNT = 0;
+	HAL_TIM_Base_Start(engine_tim.htim);
+	HAL_TIM_Base_Start_IT(engine_tim.htim);
 }
 /* USER CODE END 0 */
 
@@ -107,7 +125,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-	init();
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -124,36 +142,50 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-	htim4.Instance->CNT = 0;
-	//HAL_TIM_Base_Start_IT(&htim4);
-//	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_1);
-//	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_2);
-//	HAL_TIM_OC_Start_IT(&htim4, TIM_CHANNEL_3);
-//	
-	htim3.Instance->CNT = 0;
-	HAL_TIM_Base_Start_IT(&htim3);
-	HAL_TIM_Base_Start(&htim3);
-	HAL_TIM_Base_Start(&htim4);
+	init();
+	picture_t picture;
 	
-  /* USER CODE END 2 */
-
+	picture.data = WHEEL;
+  
+	int step = 0;
+	/* USER CODE END 2 */
+	
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	
+	test_power_suply();
   while (1)
   {
 		switch(state)
 		{
-			case SET_LED:
+			case UPDATE_LEDS:
 			{
-				HAL_GPIO_TogglePin(U2_upper.leds[U6].GPIOx, U2_upper.leds[U6].pin);
+				update_leds(U2_upper, picture, step);
+				step++;
 				latch_data(U2_upper);
 				
 				state = NOTHING;
+				
+				break;
+			}
+			case UPDATE_RATIO_TIME:
+			{
+				update_ratio_time(&engine_tim);
+			
+				state = NOTHING;
+			
+				break;
+			}
+			case UPDATE_RESOLUTION_TIME:
+			{
+				update_resolution_time(&engine_tim, &picture_tim);
+			
+				state = NOTHING;
+				
+				break;
 			}
 			case NOTHING:
 			{
-				
+				break;
 			}
 			default:
 			{
