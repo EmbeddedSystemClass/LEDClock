@@ -98,7 +98,7 @@ void init()
 	engine_tim.htim = &htim4;
 	
 	//resolution
-	picture_tim.resolution = 2;
+	picture_tim.resolution = 4;
 	picture_tim.resolution_time = 0;
 	picture_tim.htim = &htim3;
 	
@@ -151,15 +151,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	//test_power_suply();
+	test_power_suply();
   while (1)
   {
 		switch(state)
 		{
 			case UPDATE_LEDS:
 			{
-				update_leds(U2_upper, picture, step);
-				step++;
+				step = update_leds(U2_upper, picture, step);
+
 				latch_data(U2_upper);
 				
 				state = NOTHING;

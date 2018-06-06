@@ -50,7 +50,7 @@ typedef struct PICTURE
 
 // service functions
 void latch_data(led_latch_t a_latch);
-void update_leds(led_latch_t a_latch, picture_t a_picture, int a_step);
+int update_leds(led_latch_t a_latch, picture_t a_picture, int a_step);
 void update_ratio_time(engine_tim_t *a_engine);
 void update_resolution_time(engine_tim_t *a_engine, picture_tim_t *a_picture_tim);
 
