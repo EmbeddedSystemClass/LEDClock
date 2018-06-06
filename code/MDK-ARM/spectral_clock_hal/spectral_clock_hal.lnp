@@ -18,8 +18,9 @@
 "spectral_clock_hal\stm32f1xx_it.o"
 "spectral_clock_hal\main.o"
 "spectral_clock_hal\stm32f1xx_hal_msp.o"
-"spectral_clock_hal\service.o"
 "spectral_clock_hal\callbacks.o"
+"spectral_clock_hal\test.o"
+"spectral_clock_hal\service.o"
 "spectral_clock_hal\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "spectral_clock_hal\spectral_clock_hal.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

@@ -486,14 +486,19 @@
               <FilePath>../Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>service.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\lib\service.c</FilePath>
-            </File>
-            <File>
               <FileName>callbacks.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\callbacks.c</FilePath>
+            </File>
+            <File>
+              <FileName>test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\test.c</FilePath>
+            </File>
+            <File>
+              <FileName>service.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\service.c</FilePath>
             </File>
           </Files>
         </Group>
