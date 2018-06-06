@@ -10,19 +10,13 @@ void latch_data(led_latch_t a_latch)
 	HAL_GPIO_WritePin(a_latch.GPIOx, a_latch.pin, GPIO_PIN_RESET);
 }
 
-int update_leds(led_latch_t a_latch, picture_t a_picture, int a_step)
+int update_leds(led_latch_t a_latch, picture_t a_picture)
 {
-
-	HAL_GPIO_WritePin(a_latch.leds[U6].GPIOx, a_latch.leds[U6].pin, a_picture.data[a_step]);
+	HAL_GPIO_WritePin(a_latch.leds[U6].GPIOx, a_latch.leds[U6].pin, a_picture.data[a_picture.step]);
 	
-	a_step++;
+	a_picture.step++;
 	
-	if(a_step == 4)
-	{
-		return 0;
-	}
-	
-	return a_step;
+	return a_picture.step == 4 ? 0 : a_picture.step;
 }
 
 void update_ratio_time(engine_tim_t *a_engine)
@@ -42,6 +36,7 @@ void update_resolution_time(engine_tim_t *a_engine_tim, picture_tim_t *a_picture
 	__HAL_TIM_SET_AUTORELOAD(&htim3, a_picture_tim->resolution_time);
 	a_picture_tim->htim->Instance->CNT = 0;
 	a_engine_tim->htim->Instance->CNT = 0;
-	HAL_TIM_Base_Start_IT(a_engine_tim->htim);
+	
 	HAL_TIM_Base_Start_IT(a_picture_tim->htim);
+	HAL_TIM_Base_Start_IT(a_engine_tim->htim);
 }

@@ -10,16 +10,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	if(htim->Instance == picture_tim.htim->Instance)
 	{
-		if(state != UPDATE_RESOLUTION_TIME)
-		{
-			state = UPDATE_LEDS;
-		}
+		state = UPDATE_LEDS;
 	} else if(htim->Instance == engine_tim.htim->Instance)
 	{
-		if(state != UPDATE_RESOLUTION_TIME)
-		{
-			state = UPDATE_RATIO_TIME;
-		}
+		state = UPDATE_RATIO_TIME;
 	}
 }
 

@@ -142,11 +142,11 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 	init();
-	picture_t picture;
 	
+	picture_t picture;
 	picture.data = WHEEL;
+	picture.step = 0;
   
-	int step = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -158,7 +158,7 @@ int main(void)
 		{
 			case UPDATE_LEDS:
 			{
-				step = update_leds(U2_upper, picture, step);
+				picture.step = update_leds(U2_upper, picture);
 
 				latch_data(U2_upper);
 				
