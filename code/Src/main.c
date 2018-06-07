@@ -111,7 +111,7 @@ void init()
 
 	
 	// init picture 
-	picture.data = HALF_WHEEL;
+	picture.data = SMALLEST_ANGLE_360;
 	picture.step = 0;
 }
 
@@ -273,16 +273,22 @@ int main(void)
 				{
 					picture.step = 0;
 				}
-									
-				state = NOTHING;
+				
+				if(state != UPDATE_RESOLUTION_TIME)
+				{
+					state = NOTHING;
+				}
 				
 				break;
 			}
 			case UPDATE_RESOLUTION_TIME:
-			{
+			{				
 				update_resolution_time(&engine_tim, &picture_tim);
-			
-				state = NOTHING;
+				
+				if(state != UPDATE_LEDS)
+				{
+					state = NOTHING;
+				}
 				
 				break;
 			}
@@ -410,7 +416,7 @@ static void MX_TIM3_Init(void)
   TIM_MasterConfigTypeDef sMasterConfig;
 
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 7200 - 1;
+  htim3.Init.Prescaler = 72 - 1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim3.Init.Period = 10000;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

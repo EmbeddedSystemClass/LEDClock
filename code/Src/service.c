@@ -23,7 +23,7 @@ void update_resolution_time(engine_tim_t *a_engine_tim, picture_tim_t *a_picture
 {
 	a_engine_tim->ratio_time += a_engine_tim->htim->Instance->CNT / 10; // final time in ms
 
-	a_picture_tim->resolution_time = (a_engine_tim->ratio_time * 10) / a_picture_tim->resolution; 
+	a_picture_tim->resolution_time = (a_engine_tim->ratio_time * 1000) / a_picture_tim->resolution; 
 
 	a_engine_tim->ratio_time = 0;
 	
