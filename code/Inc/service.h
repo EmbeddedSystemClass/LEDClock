@@ -8,8 +8,10 @@
 // program states
 typedef enum STATE {UPDATE_LEDS, UPDATE_RESOLUTION_TIME, UPDATE_RATIO_TIME, NOTHING} state_t;
 
-// leds
-enum {U6 = 3};
+// upper leds
+enum {U9, U8, U7, U6, U5, U4, U3, U1};
+// lower leds
+enum {U32, U30, U28, U25, U24, U22, U20, U17};
 
 typedef struct LED
 {
@@ -37,8 +39,8 @@ typedef struct ENGINE_TIM
 typedef struct PICTURE_TIM
 {
 	// microseconds so ratio_time / resolution * 1000
-	uint16_t resolution_time; // htim3.Init.Period
-	uint16_t resolution; // for example 360
+	uint32_t resolution_time; // htim3.Init.Period
+	uint32_t resolution; // for example 360
 	
 	TIM_HandleTypeDef *htim;
 } picture_tim_t;
@@ -51,7 +53,7 @@ typedef struct PICTURE
 
 // service functions
 void latch_data(led_latch_t a_latch);
-int update_leds(led_latch_t a_latch, picture_t a_picture);
+void update_leds(led_latch_t a_latch, picture_t a_picture);
 void update_ratio_time(engine_tim_t *a_engine);
 void update_resolution_time(engine_tim_t *a_engine, picture_tim_t *a_picture_tim);
 

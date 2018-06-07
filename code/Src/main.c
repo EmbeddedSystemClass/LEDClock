@@ -56,9 +56,12 @@ UART_HandleTypeDef huart1;
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 led_latch_t U2_upper;
+led_latch_t U19_lower;
 state_t state;
 engine_tim_t engine_tim;
 picture_tim_t picture_tim;
+picture_t picture;
+int picture_protector;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -82,13 +85,12 @@ void init()
 	U2_upper.pin = GPIO_PIN_10;
 	U2_upper.step = 0;
 	
-	// U6
-	led_t u6;
-	u6.pin = GPIO_PIN_7;
-	u6.GPIOx = GPIOA;
+	// U19
+	U19_lower.GPIOx = GPIOB;
+	U19_lower.pin = GPIO_PIN_11;
+	U19_lower.step = 0;
 	
-	// U2 leds
-	U2_upper.leds[U6] = u6;
+	init_leds();
 	
 	// begin state
 	state = NOTHING;
@@ -96,14 +98,118 @@ void init()
 	// engine
 	engine_tim.ratio_time = 0;
 	engine_tim.htim = &htim4;
+	engine_tim.htim->Instance->CNT = 0;	
+	HAL_TIM_Base_Start_IT(engine_tim.htim);	
 	
 	//resolution
 	picture_tim.resolution = 4;
 	picture_tim.resolution_time = 0;
-	picture_tim.htim = &htim3;
 	
-	engine_tim.htim->Instance->CNT = 0;
-	HAL_TIM_Base_Start_IT(engine_tim.htim);
+	picture_tim.htim = &htim3;
+	picture_tim.htim->Instance->CNT = 0;
+	HAL_TIM_Base_Start_IT(picture_tim.htim);
+
+	
+	// init picture 
+	picture.data = WHEEL;
+	picture.step = 0;
+}
+
+void init_upper_leds()
+{
+	// U9
+	led_t u9;
+	u9.pin = GPIO_PIN_4;
+	u9.GPIOx = GPIOA;
+	// U8
+	led_t u8;
+	u8.pin = GPIO_PIN_5;
+	u8.GPIOx = GPIOA;
+	// U7
+	led_t u7;
+	u7.pin = GPIO_PIN_6;
+	u7.GPIOx = GPIOA;
+	// U6
+	led_t u6;
+	u6.pin = GPIO_PIN_7;
+	u6.GPIOx = GPIOA;
+	// U5
+	led_t u5;
+	u5.pin = GPIO_PIN_4;
+	u5.GPIOx = GPIOC;
+	// U4
+	led_t u4;
+	u4.pin = GPIO_PIN_5;
+	u4.GPIOx = GPIOC;
+	// U3
+	led_t u3;
+	u3.pin = GPIO_PIN_0;
+	u3.GPIOx = GPIOB;
+	// U1
+	led_t u1;
+	u1.pin = GPIO_PIN_1;
+	u1.GPIOx = GPIOB;
+	
+	// U2 leds
+	U2_upper.leds[U9] = u9;
+	U2_upper.leds[U8] = u8;
+	U2_upper.leds[U7] = u7;
+	U2_upper.leds[U6] = u6;
+	U2_upper.leds[U5] = u5;
+	U2_upper.leds[U4] = u4;
+	U2_upper.leds[U3] = u3;
+	U2_upper.leds[U1] = u1;
+}
+void init_lower_leds()
+{
+	// U32
+	led_t u32;
+	u32.pin = GPIO_PIN_4;
+	u32.GPIOx = GPIOA;
+	// U30
+	led_t u30;
+	u30.pin = GPIO_PIN_5;
+	u30.GPIOx = GPIOA;
+	// U28
+	led_t u28;
+	u28.pin = GPIO_PIN_6;
+	u28.GPIOx = GPIOA;
+	// U25
+	led_t u25;
+	u25.pin = GPIO_PIN_7;
+	u25.GPIOx = GPIOA;
+	// U24
+	led_t u24;
+	u24.pin = GPIO_PIN_4;
+	u24.GPIOx = GPIOC;
+	// U22
+	led_t u22;
+	u22.pin = GPIO_PIN_5;
+	u22.GPIOx = GPIOC;
+	// U20
+	led_t u20;
+	u20.pin = GPIO_PIN_0;
+	u20.GPIOx = GPIOB;
+	// U17
+	led_t u17;
+	u17.pin = GPIO_PIN_1;
+	u17.GPIOx = GPIOB;
+	
+	// U19 leds
+	U19_lower.leds[U32] = u32;
+	U19_lower.leds[U30] = u30;
+	U19_lower.leds[U28] = u28;
+	U19_lower.leds[U25] = u25;
+	U19_lower.leds[U24] = u24;
+	U19_lower.leds[U22] = u22;
+	U19_lower.leds[U20] = u20;
+	U19_lower.leds[U17] = u17;
+}
+
+void init_leds()
+{
+	init_upper_leds();
+	init_lower_leds();
 }
 /* USER CODE END 0 */
 
@@ -142,26 +248,32 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 	init();
-	
-	picture_t picture;
-	picture.data = WHEEL;
-	picture.step = 0;
   
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 	test_power_suply();
+	//test_leds_and_latch();
   while (1)
   {
 		switch(state)
 		{
 			case UPDATE_LEDS:
 			{
-				picture.step = update_leds(U2_upper, picture);
-
-				latch_data(U2_upper);
+				update_leds(U2_upper, picture);
+				update_leds(U19_lower, picture);
 				
+				latch_data(U2_upper);
+				latch_data(U19_lower);
+				
+				picture.step++; // dodaje dwa razy czyli dwa razy wchodzi w ta funkcje w jednym kacie
+
+				if(picture.step == 4)
+				{
+					picture.step = 0;
+				}
+									
 				state = NOTHING;
 				
 				break;

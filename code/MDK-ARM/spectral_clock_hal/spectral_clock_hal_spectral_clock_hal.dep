@@ -1,13 +1,13 @@
 Dependencies for Project 'spectral_clock_hal', Target 'spectral_clock_hal': (DO NOT MODIFY !)
-F (startup_stm32f103xb.s)(0x5B17FF21)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o spectral_clock_hal\startup_stm32f103xb.o --depend spectral_clock_hal\startup_stm32f103xb.d)
+F (startup_stm32f103xb.s)(0x5B181D80)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o spectral_clock_hal\startup_stm32f103xb.o --depend spectral_clock_hal\startup_stm32f103xb.d)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_gpio.o --omf_browse spectral_clock_hal\stm32f1xx_hal_gpio.crf --depend spectral_clock_hal\stm32f1xx_hal_gpio.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -31,12 +31,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc_ex.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_rtc_ex.o --omf_browse spectral_clock_hal\stm32f1xx_hal_rtc_ex.crf --depend spectral_clock_hal\stm32f1xx_hal_rtc_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -60,12 +60,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_dma.o --omf_browse spectral_clock_hal\stm32f1xx_hal_dma.crf --depend spectral_clock_hal\stm32f1xx_hal_dma.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -89,12 +89,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_flash_ex.o --omf_browse spectral_clock_hal\stm32f1xx_hal_flash_ex.crf --depend spectral_clock_hal\stm32f1xx_hal_flash_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -118,12 +118,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_rcc_ex.o --omf_browse spectral_clock_hal\stm32f1xx_hal_rcc_ex.crf --depend spectral_clock_hal\stm32f1xx_hal_rcc_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -147,12 +147,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_flash.o --omf_browse spectral_clock_hal\stm32f1xx_hal_flash.crf --depend spectral_clock_hal\stm32f1xx_hal_flash.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -176,12 +176,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_tim_ex.o --omf_browse spectral_clock_hal\stm32f1xx_hal_tim_ex.crf --depend spectral_clock_hal\stm32f1xx_hal_tim_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -205,12 +205,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_cortex.o --omf_browse spectral_clock_hal\stm32f1xx_hal_cortex.crf --depend spectral_clock_hal\stm32f1xx_hal_cortex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -234,12 +234,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal.o --omf_browse spectral_clock_hal\stm32f1xx_hal.crf --depend spectral_clock_hal\stm32f1xx_hal.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -263,12 +263,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_gpio_ex.o --omf_browse spectral_clock_hal\stm32f1xx_hal_gpio_ex.crf --depend spectral_clock_hal\stm32f1xx_hal_gpio_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -292,12 +292,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_rcc.o --omf_browse spectral_clock_hal\stm32f1xx_hal_rcc.crf --depend spectral_clock_hal\stm32f1xx_hal_rcc.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -321,12 +321,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_pwr.o --omf_browse spectral_clock_hal\stm32f1xx_hal_pwr.crf --depend spectral_clock_hal\stm32f1xx_hal_pwr.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -350,12 +350,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rtc.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_rtc.o --omf_browse spectral_clock_hal\stm32f1xx_hal_rtc.crf --depend spectral_clock_hal\stm32f1xx_hal_rtc.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -379,12 +379,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_tim.o --omf_browse spectral_clock_hal\stm32f1xx_hal_tim.crf --depend spectral_clock_hal\stm32f1xx_hal_tim.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -408,12 +408,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c)(0x5A8C0302)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_uart.o --omf_browse spectral_clock_hal\stm32f1xx_hal_uart.crf --depend spectral_clock_hal\stm32f1xx_hal_uart.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -435,14 +435,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
-F (../Src/stm32f1xx_it.c)(0x5B17FF1E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_it.o --omf_browse spectral_clock_hal\stm32f1xx_it.crf --depend spectral_clock_hal\stm32f1xx_it.d)
+F (../Src/stm32f1xx_it.c)(0x5B181D7E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_it.o --omf_browse spectral_clock_hal\stm32f1xx_it.crf --depend spectral_clock_hal\stm32f1xx_it.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -464,15 +464,15 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
-I (../Inc/stm32f1xx_it.h)(0x5B17FF1E)
-F (../Src/main.c)(0x5B181A39)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\main.o --omf_browse spectral_clock_hal\main.crf --depend spectral_clock_hal\main.d)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_it.h)(0x5B181D7E)
+F (../Src/main.c)(0x5B192328)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\main.o --omf_browse spectral_clock_hal\main.crf --depend spectral_clock_hal\main.d)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -494,18 +494,18 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
-I (../Inc/service.h)(0x5B181969)
+I (../Inc/service.h)(0x5B191A81)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588BE5B4)
-I (../Inc/test.h)(0x5B17A019)
-I (../Inc/pictures.h)(0x5B181128)
-F (../Src/stm32f1xx_hal_msp.c)(0x5B17FF1E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_msp.o --omf_browse spectral_clock_hal\stm32f1xx_hal_msp.crf --depend spectral_clock_hal\stm32f1xx_hal_msp.d)
+I (../Inc/test.h)(0x5B18EE63)
+I (../Inc/pictures.h)(0x5B192235)
+F (../Src/stm32f1xx_hal_msp.c)(0x5B181D7E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\stm32f1xx_hal_msp.o --omf_browse spectral_clock_hal\stm32f1xx_hal_msp.crf --depend spectral_clock_hal\stm32f1xx_hal_msp.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -527,14 +527,14 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
-F (..\Src\callbacks.c)(0x5B181B25)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\callbacks.o --omf_browse spectral_clock_hal\callbacks.crf --depend spectral_clock_hal\callbacks.d)
+F (..\Src\callbacks.c)(0x5B1922EB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\callbacks.o --omf_browse spectral_clock_hal\callbacks.crf --depend spectral_clock_hal\callbacks.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -556,17 +556,17 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
-I (../Inc/service.h)(0x5B181969)
+I (../Inc/service.h)(0x5B191A81)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588BE5B4)
-F (..\Src\test.c)(0x5B180600)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\test.o --omf_browse spectral_clock_hal\test.crf --depend spectral_clock_hal\test.d)
-I (../Inc/test.h)(0x5B17A019)
+F (..\Src\test.c)(0x5B190222)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\test.o --omf_browse spectral_clock_hal\test.crf --depend spectral_clock_hal\test.d)
+I (../Inc/test.h)(0x5B18EE63)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -588,15 +588,15 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
-F (..\Src\service.c)(0x5B1819A3)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\service.o --omf_browse spectral_clock_hal\service.crf --depend spectral_clock_hal\service.d)
-I (../Inc/service.h)(0x5B181969)
+F (..\Src\service.c)(0x5B192289)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\service.o --omf_browse spectral_clock_hal\service.crf --depend spectral_clock_hal\service.d)
+I (../Inc/service.h)(0x5B191A81)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -621,7 +621,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5A8C0302)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588BE5B4)
 F (../Src/system_stm32f1xx.c)(0x5A8C02F7)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_spectral_clock_hal-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.1.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o spectral_clock_hal\system_stm32f1xx.o --omf_browse spectral_clock_hal\system_stm32f1xx.crf --depend spectral_clock_hal\system_stm32f1xx.d)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5A8C02F7)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5A8C02F6)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5B191A5E)
 I (../Drivers/CMSIS/Include/core_cm3.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
 I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5A8C0301)
@@ -629,8 +629,8 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5A8C0301)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5A8C02F7)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5A8C0301)
-I (../Inc/stm32f1xx_hal_conf.h)(0x5B17FF1E)
-I (../Inc/main.h)(0x5B17FF1E)
+I (../Inc/stm32f1xx_hal_conf.h)(0x5B181D7E)
+I (../Inc/main.h)(0x5B18FFE6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5A8C0302)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5A8C0301)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588BE5B4)

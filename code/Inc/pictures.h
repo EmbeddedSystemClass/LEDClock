@@ -2,6 +2,6 @@
 #ifndef PICTURE_H
 #define PICTURE_H
 
-bool WHEEL[4] = {1, 0, 0, 0}; 
+bool WHEEL[4] = {1, 0, 1, 0}; 
 
 #endif
