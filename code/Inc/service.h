@@ -3,7 +3,6 @@
 #define SERVICE_H
 
 #include "stm32f1xx_hal.h"
-#include "stdbool.h"
 
 // program states
 typedef enum STATE {UPDATE_LEDS, UPDATE_RESOLUTION_TIME, NOTHING} state_t;
@@ -23,8 +22,6 @@ typedef struct LED_LATCH
 {
 	GPIO_TypeDef* GPIOx;
 	uint16_t pin;
-	
-	int step;
 	
 	led_t leds[8];
 } led_latch_t;
@@ -47,13 +44,13 @@ typedef struct PICTURE_TIM
 
 typedef struct PICTURE
 {
-	bool (*data)[360];
+	uint8_t (*data)[360];
 	int step;
 } picture_t;
 
 // service functions
 void latch_data(led_latch_t a_latch);
-void update_leds(led_latch_t a_latch, picture_t a_picture);
+void update_leds(picture_t a_picture);
 void update_resolution_time(engine_tim_t *a_engine, picture_tim_t *a_picture_tim);
 
 #endif

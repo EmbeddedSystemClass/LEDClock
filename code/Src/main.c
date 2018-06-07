@@ -83,12 +83,10 @@ void init()
 	// U2
 	U2_upper.GPIOx = GPIOB;
 	U2_upper.pin = GPIO_PIN_10;
-	U2_upper.step = 0;
 	
 	// U19
 	U19_lower.GPIOx = GPIOB;
 	U19_lower.pin = GPIO_PIN_11;
-	U19_lower.step = 0;
 	
 	init_leds();
 	
@@ -111,8 +109,14 @@ void init()
 
 	
 	// init picture 
-	picture.data = SMALLEST_ANGLE_360;
+	picture.data = CLOCK;
 	picture.step = 0;
+}
+
+void init_leds()
+{
+	init_upper_leds();
+	init_lower_leds();
 }
 
 void init_upper_leds()
@@ -205,12 +209,6 @@ void init_lower_leds()
 	U19_lower.leds[U20] = u20;
 	U19_lower.leds[U17] = u17;
 }
-
-void init_leds()
-{
-	init_upper_leds();
-	init_lower_leds();
-}
 /* USER CODE END 0 */
 
 /**
@@ -261,11 +259,7 @@ int main(void)
 		{
 			case UPDATE_LEDS:
 			{
-				update_leds(U2_upper, picture);
-				update_leds(U19_lower, picture);
-				
-				latch_data(U2_upper);
-				latch_data(U19_lower);
+				update_leds(picture);
 				
 				picture.step++; // dodaje dwa razy czyli dwa razy wchodzi w ta funkcje w jednym kacie
 
