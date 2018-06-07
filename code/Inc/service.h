@@ -6,7 +6,7 @@
 #include "stdbool.h"
 
 // program states
-typedef enum STATE {UPDATE_LEDS, UPDATE_RESOLUTION_TIME, UPDATE_RATIO_TIME, NOTHING} state_t;
+typedef enum STATE {UPDATE_LEDS, UPDATE_RESOLUTION_TIME, NOTHING} state_t;
 
 // upper leds
 enum {U9, U8, U7, U6, U5, U4, U3, U1};
@@ -47,14 +47,13 @@ typedef struct PICTURE_TIM
 
 typedef struct PICTURE
 {
-	bool *data;
+	bool (*data)[360];
 	int step;
 } picture_t;
 
 // service functions
 void latch_data(led_latch_t a_latch);
 void update_leds(led_latch_t a_latch, picture_t a_picture);
-void update_ratio_time(engine_tim_t *a_engine);
 void update_resolution_time(engine_tim_t *a_engine, picture_tim_t *a_picture_tim);
 
 #endif

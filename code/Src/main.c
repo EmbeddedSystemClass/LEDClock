@@ -40,9 +40,9 @@
 #include "stm32f1xx_hal.h"
 
 /* USER CODE BEGIN Includes */
+#include "pictures.h"
 #include "service.h"
 #include "test.h"
-#include "pictures.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -102,7 +102,7 @@ void init()
 	HAL_TIM_Base_Start_IT(engine_tim.htim);	
 	
 	//resolution
-	picture_tim.resolution = 4;
+	picture_tim.resolution = RESOLUTION;
 	picture_tim.resolution_time = 0;
 	
 	picture_tim.htim = &htim3;
@@ -111,7 +111,7 @@ void init()
 
 	
 	// init picture 
-	picture.data = WHEEL;
+	picture.data = HALF_WHEEL;
 	picture.step = 0;
 }
 
@@ -269,21 +269,13 @@ int main(void)
 				
 				picture.step++; // dodaje dwa razy czyli dwa razy wchodzi w ta funkcje w jednym kacie
 
-				if(picture.step == 4)
+				if(picture.step == RESOLUTION)
 				{
 					picture.step = 0;
 				}
 									
 				state = NOTHING;
 				
-				break;
-			}
-			case UPDATE_RATIO_TIME:
-			{
-				update_ratio_time(&engine_tim);
-			
-				state = NOTHING;
-			
 				break;
 			}
 			case UPDATE_RESOLUTION_TIME:
