@@ -61,7 +61,7 @@ state_t state;
 engine_tim_t engine_tim;
 picture_tim_t picture_tim;
 picture_t picture;
-int picture_protector;
+uint8_t buffer[1];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -251,6 +251,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	HAL_UART_Receive_IT(&huart1, buffer, sizeof(buffer) / sizeof(uint8_t));
 	test_power_suply();
 	//test_leds_and_latch();
   while (1)
@@ -268,7 +269,7 @@ int main(void)
 					picture.step = 0;
 				}
 				
-				if(state != UPDATE_RESOLUTION_TIME)
+				if(state != UPDATE_RESOLUTION_TIME && state != CHANGE_PICTURE)
 				{
 					state = NOTHING;
 				}
@@ -279,7 +280,26 @@ int main(void)
 			{				
 				update_resolution_time(&engine_tim, &picture_tim);
 				
-				if(state != UPDATE_LEDS)
+				if(state != UPDATE_LEDS && state != CHANGE_PICTURE)
+				{
+					state = NOTHING;
+				}
+				
+				break;
+			}
+			case CHANGE_PICTURE:
+			{				
+				if(buffer[0] == 'A')
+				{
+					picture.data = HALF_WHEEL;
+				} else if(buffer[0] == 'B')
+				{
+					picture.data = CLOCK;
+				}
+				picture.step = 0;
+				
+				HAL_UART_Receive_IT(&huart1, buffer, sizeof(buffer) / sizeof(uint8_t));
+				if(state != UPDATE_LEDS && state != UPDATE_RESOLUTION_TIME)
 				{
 					state = NOTHING;
 				}
@@ -473,7 +493,7 @@ static void MX_USART1_UART_Init(void)
 {
 
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 9600;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;

@@ -17,3 +17,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 	state = UPDATE_RESOLUTION_TIME;
 }
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	state = CHANGE_PICTURE;
+}
