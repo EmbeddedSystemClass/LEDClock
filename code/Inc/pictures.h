@@ -1,3 +1,11 @@
+/**
+ * @file pictures.h
+ * @author  Jakub Wieczorek <jakub.wieczorek0101@gmail.com>
+ * @date 10.06.2018
+ * @version 1.0
+ *
+ * @brief Pictures library.
+ */
 
 #ifndef PICTURE_H
 #define PICTURE_H

@@ -1,0 +1,47 @@
+\hypertarget{callbacks_8c}{}\section{C\+:/\+Users/\+Jakub Wieczorek/\+Desktop/studia/\+S\+M\+S/spectral\+\_\+clock/code/\+Src/callbacks.c File Reference}
+\label{callbacks_8c}\index{C\+:/\+Users/\+Jakub Wieczorek/\+Desktop/studia/\+S\+M\+S/spectral\+\_\+clock/code/\+Src/callbacks.\+c@{C\+:/\+Users/\+Jakub Wieczorek/\+Desktop/studia/\+S\+M\+S/spectral\+\_\+clock/code/\+Src/callbacks.\+c}}
+
+
+Callbacks file implemeting or overiding \+\_\+\+\_\+weak functions invoking in interrupts.  
+
+
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+hal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}service.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{callbacks_8c_a8a3b0ad512a6e6c6157440b68d395eac}\label{callbacks_8c_a8a3b0ad512a6e6c6157440b68d395eac}} 
+void {\bfseries H\+A\+L\+\_\+\+T\+I\+M\+\_\+\+Period\+Elapsed\+Callback} (T\+I\+M\+\_\+\+Handle\+Type\+Def $\ast$htim)
+\item 
+\mbox{\Hypertarget{callbacks_8c_a0cd91fd3a9608559c2a87a8ba6cba55f}\label{callbacks_8c_a0cd91fd3a9608559c2a87a8ba6cba55f}} 
+void {\bfseries H\+A\+L\+\_\+\+G\+P\+I\+O\+\_\+\+E\+X\+T\+I\+\_\+\+Callback} (uint16\+\_\+t G\+P\+I\+O\+\_\+\+Pin)
+\item 
+\mbox{\Hypertarget{callbacks_8c_ae494a9643f29b87d6d81e5264e60e57b}\label{callbacks_8c_ae494a9643f29b87d6d81e5264e60e57b}} 
+void {\bfseries H\+A\+L\+\_\+\+U\+A\+R\+T\+\_\+\+Rx\+Cplt\+Callback} (U\+A\+R\+T\+\_\+\+Handle\+Type\+Def $\ast$huart)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{callbacks_8c_a499e7824037af983d0524a98081e7f0b}\label{callbacks_8c_a499e7824037af983d0524a98081e7f0b}} 
+state\+\_\+t {\bfseries state}
+\item 
+\mbox{\Hypertarget{callbacks_8c_abdeac3d2a31ce16009b6e2e8f9e29081}\label{callbacks_8c_abdeac3d2a31ce16009b6e2e8f9e29081}} 
+\mbox{\hyperlink{struct_e_n_g_i_n_e___t_i_m}{engine\+\_\+tim\+\_\+t}} {\bfseries engine\+\_\+tim}
+\item 
+\mbox{\Hypertarget{callbacks_8c_a7535e3bea50a2193cc4ddfda7b92e7bc}\label{callbacks_8c_a7535e3bea50a2193cc4ddfda7b92e7bc}} 
+\mbox{\hyperlink{struct_p_i_c_t_u_r_e___t_i_m}{picture\+\_\+tim\+\_\+t}} {\bfseries picture\+\_\+tim}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callbacks file implemeting or overiding \+\_\+\+\_\+weak functions invoking in interrupts. 
+
+\begin{DoxyAuthor}{Author}
+Jakub Wieczorek \href{mailto:jakub.wieczorek0101@gmail.com}{\tt jakub.\+wieczorek0101@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+10.\+06.\+2018 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}

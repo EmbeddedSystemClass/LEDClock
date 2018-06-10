@@ -1,3 +1,12 @@
+/**
+ * @file callbacks.c
+ * @author  Jakub Wieczorek <jakub.wieczorek0101@gmail.com>
+ * @date 10.06.2018
+ * @version 1.0
+ *
+ * @brief Callbacks file implemeting or overiding __weak functions invoking in interrupts.
+ */
+
 #include "stm32f1xx_hal.h"
 #include "service.h"
 

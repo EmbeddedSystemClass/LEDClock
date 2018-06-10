@@ -1,3 +1,12 @@
+/**
+ * @file test.c
+ * @author  Jakub Wieczorek <jakub.wieczorek0101@gmail.com>
+ * @date 10.06.2018
+ * @version 1.0
+ *
+ * @brief test source file.
+ */
+
 #include "test.h"
 
 void test_power_suply()

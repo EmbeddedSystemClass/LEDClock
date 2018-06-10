@@ -1,3 +1,12 @@
+/**
+ * @file service.c
+ * @author  Jakub Wieczorek <jakub.wieczorek0101@gmail.com>
+ * @date 10.06.2018
+ * @version 1.0
+ *
+ * @brief service source file.
+ */
+
 #include "service.h"
 #include "stdbool.h"
 

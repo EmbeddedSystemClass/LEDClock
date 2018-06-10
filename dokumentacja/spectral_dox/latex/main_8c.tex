@@ -1,0 +1,156 @@
+\hypertarget{main_8c}{}\section{C\+:/\+Users/\+Jakub Wieczorek/\+Desktop/studia/\+S\+M\+S/spectral\+\_\+clock/code/\+Src/main.c File Reference}
+\label{main_8c}\index{C\+:/\+Users/\+Jakub Wieczorek/\+Desktop/studia/\+S\+M\+S/spectral\+\_\+clock/code/\+Src/main.\+c@{C\+:/\+Users/\+Jakub Wieczorek/\+Desktop/studia/\+S\+M\+S/spectral\+\_\+clock/code/\+Src/main.\+c}}
+
+
+\+: Main program body  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f1xx\+\_\+hal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pictures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}service.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}test.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_a70af21c671abfcc773614a9a4f63d920}{System\+Clock\+\_\+\+Config}} (void)
+\begin{DoxyCompactList}\small\item\em System Clock Configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a02fd73d861ef2e4aabb38c0c9ff82947}{init}} ()
+\begin{DoxyCompactList}\small\item\em Uncomment the line below to expanse the \char`\"{}assert\+\_\+param\char`\"{} macro in the H\+AL drivers code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_a8b42d680f17cd1974a8c8a4bb9d817aa}\label{main_8c_a8b42d680f17cd1974a8c8a4bb9d817aa}} 
+void \mbox{\hyperlink{main_8c_a8b42d680f17cd1974a8c8a4bb9d817aa}{init\+\_\+leds}} ()
+\begin{DoxyCompactList}\small\item\em init leds instances \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_aa4bf6678de368504d81bc1dcc45b2cdc}\label{main_8c_aa4bf6678de368504d81bc1dcc45b2cdc}} 
+void \mbox{\hyperlink{main_8c_aa4bf6678de368504d81bc1dcc45b2cdc}{init\+\_\+upper\+\_\+leds}} ()
+\begin{DoxyCompactList}\small\item\em init leds instances in upper latch \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8c_a54befb94d0acba19274fdd3dcda16b20}\label{main_8c_a54befb94d0acba19274fdd3dcda16b20}} 
+void \mbox{\hyperlink{main_8c_a54befb94d0acba19274fdd3dcda16b20}{init\+\_\+lower\+\_\+leds}} ()
+\begin{DoxyCompactList}\small\item\em init leds instances in lower latch \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em The application entry point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8c_a829116a51f1db1a72ebd1120f60719d5}{\+\_\+\+Error\+\_\+\+Handler}} (char $\ast$file, int line)
+\begin{DoxyCompactList}\small\item\em This function is executed in case of error occurrence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8c_aa0c7fca836406ade332e1e3f1039d8ab}\label{main_8c_aa0c7fca836406ade332e1e3f1039d8ab}} 
+R\+T\+C\+\_\+\+Handle\+Type\+Def {\bfseries hrtc}
+\item 
+\mbox{\Hypertarget{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62}\label{main_8c_aac3d2c59ee0e3bbae1b99529a154eb62}} 
+T\+I\+M\+\_\+\+Handle\+Type\+Def {\bfseries htim3}
+\item 
+\mbox{\Hypertarget{main_8c_a85788cec5a97ee377e4ee2e74f026484}\label{main_8c_a85788cec5a97ee377e4ee2e74f026484}} 
+T\+I\+M\+\_\+\+Handle\+Type\+Def {\bfseries htim4}
+\item 
+\mbox{\Hypertarget{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5}\label{main_8c_a2cf715bef37f7e8ef385a30974a5f0d5}} 
+U\+A\+R\+T\+\_\+\+Handle\+Type\+Def {\bfseries huart1}
+\item 
+\mbox{\Hypertarget{main_8c_a4f138eb2432c3cc07e3cde48b45ed419}\label{main_8c_a4f138eb2432c3cc07e3cde48b45ed419}} 
+\mbox{\hyperlink{struct_l_e_d___l_a_t_c_h}{led\+\_\+latch\+\_\+t}} {\bfseries U2\+\_\+upper}
+\item 
+\mbox{\Hypertarget{main_8c_acd92be42fae68d5185da1652eef887af}\label{main_8c_acd92be42fae68d5185da1652eef887af}} 
+\mbox{\hyperlink{struct_l_e_d___l_a_t_c_h}{led\+\_\+latch\+\_\+t}} {\bfseries U19\+\_\+lower}
+\item 
+\mbox{\Hypertarget{main_8c_a499e7824037af983d0524a98081e7f0b}\label{main_8c_a499e7824037af983d0524a98081e7f0b}} 
+state\+\_\+t {\bfseries state}
+\item 
+\mbox{\Hypertarget{main_8c_abdeac3d2a31ce16009b6e2e8f9e29081}\label{main_8c_abdeac3d2a31ce16009b6e2e8f9e29081}} 
+\mbox{\hyperlink{struct_e_n_g_i_n_e___t_i_m}{engine\+\_\+tim\+\_\+t}} {\bfseries engine\+\_\+tim}
+\item 
+\mbox{\Hypertarget{main_8c_a7535e3bea50a2193cc4ddfda7b92e7bc}\label{main_8c_a7535e3bea50a2193cc4ddfda7b92e7bc}} 
+\mbox{\hyperlink{struct_p_i_c_t_u_r_e___t_i_m}{picture\+\_\+tim\+\_\+t}} {\bfseries picture\+\_\+tim}
+\item 
+\mbox{\Hypertarget{main_8c_a096f678d05f8f42383191ce196e97a6b}\label{main_8c_a096f678d05f8f42383191ce196e97a6b}} 
+\mbox{\hyperlink{struct_p_i_c_t_u_r_e}{picture\+\_\+t}} {\bfseries picture}
+\item 
+\mbox{\Hypertarget{main_8c_a86b8eb0064861a849eeb6f4153fe9601}\label{main_8c_a86b8eb0064861a849eeb6f4153fe9601}} 
+uint8\+\_\+t {\bfseries buffer} \mbox{[}1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\+: Main program body 
+
+This notice applies to any and all portions of this file that are not between comment pairs U\+S\+ER C\+O\+DE B\+E\+G\+IN and U\+S\+ER C\+O\+DE E\+ND. Other portions of this file, whether inserted by the user or by software development tools are owned by their respective copyright owners.
+
+C\+O\+P\+Y\+R\+I\+G\+H\+T(c) 2018 S\+T\+Microelectronics
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met\+:
+\begin{DoxyEnumerate}
+\item Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+\item Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+\item Neither the name of S\+T\+Microelectronics nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+\end{DoxyEnumerate}
+
+T\+H\+IS S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED BY T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS A\+ND C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS \char`\"{}\+A\+S I\+S\char`\"{} A\+ND A\+NY E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES, I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, T\+HE I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY A\+ND F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+RE D\+I\+S\+C\+L\+A\+I\+M\+ED. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+ER OR C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT, I\+N\+C\+I\+D\+E\+N\+T\+AL, S\+P\+E\+C\+I\+AL, E\+X\+E\+M\+P\+L\+A\+RY, OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES (I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, P\+R\+O\+C\+U\+R\+E\+M\+E\+NT OF S\+U\+B\+S\+T\+I\+T\+U\+TE G\+O\+O\+DS OR S\+E\+R\+V\+I\+C\+ES; L\+O\+SS OF U\+SE, D\+A\+TA, OR P\+R\+O\+F\+I\+TS; OR B\+U\+S\+I\+N\+E\+SS I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+ON) H\+O\+W\+E\+V\+ER C\+A\+U\+S\+ED A\+ND ON A\+NY T\+H\+E\+O\+RY OF L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN C\+O\+N\+T\+R\+A\+CT, S\+T\+R\+I\+CT L\+I\+A\+B\+I\+L\+I\+TY, OR T\+O\+RT (I\+N\+C\+L\+U\+D\+I\+NG N\+E\+G\+L\+I\+G\+E\+N\+CE OR O\+T\+H\+E\+R\+W\+I\+SE) A\+R\+I\+S\+I\+NG IN A\+NY W\+AY O\+UT OF T\+HE U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE, E\+V\+EN IF A\+D\+V\+I\+S\+ED OF T\+HE P\+O\+S\+S\+I\+B\+I\+L\+I\+TY OF S\+U\+CH D\+A\+M\+A\+GE. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8c_a829116a51f1db1a72ebd1120f60719d5}\label{main_8c_a829116a51f1db1a72ebd1120f60719d5}} 
+\index{main.\+c@{main.\+c}!\+\_\+\+Error\+\_\+\+Handler@{\+\_\+\+Error\+\_\+\+Handler}}
+\index{\+\_\+\+Error\+\_\+\+Handler@{\+\_\+\+Error\+\_\+\+Handler}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+Error\+\_\+\+Handler()}{\_Error\_Handler()}}
+{\footnotesize\ttfamily void \+\_\+\+Error\+\_\+\+Handler (\begin{DoxyParamCaption}\item[{char $\ast$}]{file,  }\item[{int}]{line }\end{DoxyParamCaption})}
+
+
+
+This function is executed in case of error occurrence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file name as string. \\
+\hline
+{\em line} & The line in file as a number. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a02fd73d861ef2e4aabb38c0c9ff82947}\label{main_8c_a02fd73d861ef2e4aabb38c0c9ff82947}} 
+\index{main.\+c@{main.\+c}!init@{init}}
+\index{init@{init}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Uncomment the line below to expanse the \char`\"{}assert\+\_\+param\char`\"{} macro in the H\+AL drivers code. 
+
+init all necessary instances like latch or leds basing on electronic schema \mbox{\Hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.\+c@{main.\+c}!main@{main}}
+\index{main@{main}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+The application entry point. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{main_8c_a70af21c671abfcc773614a9a4f63d920}\label{main_8c_a70af21c671abfcc773614a9a4f63d920}} 
+\index{main.\+c@{main.\+c}!System\+Clock\+\_\+\+Config@{System\+Clock\+\_\+\+Config}}
+\index{System\+Clock\+\_\+\+Config@{System\+Clock\+\_\+\+Config}!main.\+c@{main.\+c}}
+\subsubsection{\texorpdfstring{System\+Clock\+\_\+\+Config()}{SystemClock\_Config()}}
+{\footnotesize\ttfamily void System\+Clock\+\_\+\+Config (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+System Clock Configuration. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+Initializes the C\+PU, A\+HB and A\+PB busses clocks
+
+Initializes the C\+PU, A\+HB and A\+PB busses clocks
+
+Configure the Systick interrupt time
+
+Configure the Systick

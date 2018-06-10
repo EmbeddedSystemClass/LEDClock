@@ -57,9 +57,24 @@
 /* #define USE_FULL_ASSERT    1U */
 
 /* USER CODE BEGIN Private defines */
+/**
+  * @brief init all necessary instances like latch or leds basing on electronic schema
+  */
 void init(void);
+
+/**
+  * @brief init leds instances
+  */
 void init_leds(void);
+
+/**
+  * @brief init leds instances in upper latch
+  */
 void init_upper_leds(void);
+
+/**
+  * @brief init leds instances in lower latch
+  */
 void init_lower_leds(void);
 /* USER CODE END Private defines */
 
