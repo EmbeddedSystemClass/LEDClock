@@ -79,6 +79,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;stm32f1xx_hal.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="pictures_8h_source.html">pictures.h</a>&quot;</code><br />
+<code>#include &quot;stdbool.h&quot;</code><br />
 </div>
 <p><a href="service_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -96,15 +97,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_i_c_t_u_r_e___t_i_m.html">PICTURE_TIM</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct represanting timer for counting the time of leds switching on in smallest angle  <a href="struct_p_i_c_t_u_r_e___t_i_m.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_e_v_e_n_t_s.html">EVENTS</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">events updated by particular callbacks. Directs the program execution.  <a href="struct_e_v_e_n_t_s.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_p_i_c_t_u_r_e.html">PICTURE</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the picture displayed by leds  <a href="struct_p_i_c_t_u_r_e.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af18ba74dd9300c9f8469b5c6be185a09"><td class="memItemLeft" align="right" valign="top"><a id="af18ba74dd9300c9f8469b5c6be185a09"></a>
-typedef enum <a class="el" href="service_8h.html#a275a67132f10277ada3a0ee3d616b647">STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state_t</b></td></tr>
-<tr class="separator:af18ba74dd9300c9f8469b5c6be185a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc85e390d8bdf7f1bd2c8ca4321f921"><td class="memItemLeft" align="right" valign="top"><a id="a3bc85e390d8bdf7f1bd2c8ca4321f921"></a>
 typedef struct <a class="el" href="struct_l_e_d.html">LED</a>&#160;</td><td class="memItemRight" valign="bottom"><b>led_t</b></td></tr>
 <tr class="separator:a3bc85e390d8bdf7f1bd2c8ca4321f921"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,19 +118,15 @@ typedef struct <a class="el" href="struct_e_n_g_i_n_e___t_i_m.html">ENGINE_TIM</
 <tr class="memitem:ac4c59e9cf70b4e13db53a00024206977"><td class="memItemLeft" align="right" valign="top"><a id="ac4c59e9cf70b4e13db53a00024206977"></a>
 typedef struct <a class="el" href="struct_p_i_c_t_u_r_e___t_i_m.html">PICTURE_TIM</a>&#160;</td><td class="memItemRight" valign="bottom"><b>picture_tim_t</b></td></tr>
 <tr class="separator:ac4c59e9cf70b4e13db53a00024206977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863c19c9c2f22633745ce44148219b15"><td class="memItemLeft" align="right" valign="top"><a id="a863c19c9c2f22633745ce44148219b15"></a>
+typedef struct <a class="el" href="struct_e_v_e_n_t_s.html">EVENTS</a>&#160;</td><td class="memItemRight" valign="bottom"><b>events_t</b></td></tr>
+<tr class="separator:a863c19c9c2f22633745ce44148219b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac96f7304a68ddcffc2e3a0bfaf6c185d"><td class="memItemLeft" align="right" valign="top"><a id="ac96f7304a68ddcffc2e3a0bfaf6c185d"></a>
 typedef struct <a class="el" href="struct_p_i_c_t_u_r_e.html">PICTURE</a>&#160;</td><td class="memItemRight" valign="bottom"><b>picture_t</b></td></tr>
 <tr class="separator:ac96f7304a68ddcffc2e3a0bfaf6c185d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a275a67132f10277ada3a0ee3d616b647"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="service_8h.html#a275a67132f10277ada3a0ee3d616b647">STATE</a> { <a class="el" href="service_8h.html#a275a67132f10277ada3a0ee3d616b647a2baba0b3551129dcfa700e0459e4de60">UPDATE_LEDS</a>, 
-<a class="el" href="service_8h.html#a275a67132f10277ada3a0ee3d616b647ab5a06561b0ee9381d980577efd75b173">UPDATE_RESOLUTION_TIME</a>, 
-<a class="el" href="service_8h.html#a275a67132f10277ada3a0ee3d616b647ab89bb7f45fc6ff1427d119277d354849">CHANGE_PICTURE</a>, 
-<a class="el" href="service_8h.html#a275a67132f10277ada3a0ee3d616b647a29d3253a5a03fd0ef666bed9a9ab6eb8">NOTHING</a>
- }</td></tr>
-<tr class="memdesc:a275a67132f10277ada3a0ee3d616b647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updating in particular callbacks. Directs the program execution.  <a href="service_8h.html#a275a67132f10277ada3a0ee3d616b647">More...</a><br /></td></tr>
-<tr class="separator:a275a67132f10277ada3a0ee3d616b647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7382d51d8dba53a32f99083d61a485af"><td class="memItemLeft" align="right" valign="top"><a id="a7382d51d8dba53a32f99083d61a485af"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="service_8h.html#a7382d51d8dba53a32f99083d61a485af">UPPER_LEDS</a> { <br />
 &#160;&#160;<b>U9</b>, 
 <b>U8</b>, 
@@ -179,34 +176,7 @@ Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Jakub Wieczorek <a href="#" onclick="location.href='mai'+'lto:'+'jak'+'ub'+'.wi'+'ec'+'zor'+'ek'+'010'+'1@'+'gma'+'il'+'.co'+'m'; return false;">jakub<span style="display: none;">.nosp@m.</span>.wie<span style="display: none;">.nosp@m.</span>czore<span style="display: none;">.nosp@m.</span>k010<span style="display: none;">.nosp@m.</span>1@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a> </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>10.06.2018 </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a275a67132f10277ada3a0ee3d616b647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a275a67132f10277ada3a0ee3d616b647">&#9670;&nbsp;</a></span>STATE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="service_8h.html#a275a67132f10277ada3a0ee3d616b647">STATE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Updating in particular callbacks. Directs the program execution. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a275a67132f10277ada3a0ee3d616b647a2baba0b3551129dcfa700e0459e4de60"></a>UPDATE_LEDS&#160;</td><td class="fielddoc"><p>update led information by the data from image </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a275a67132f10277ada3a0ee3d616b647ab5a06561b0ee9381d980577efd75b173"></a>UPDATE_RESOLUTION_TIME&#160;</td><td class="fielddoc"><p>update resolution time when response from sensor </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a275a67132f10277ada3a0ee3d616b647ab89bb7f45fc6ff1427d119277d354849"></a>CHANGE_PICTURE&#160;</td><td class="fielddoc"><p>change picture depending on user command by bluetooth </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a275a67132f10277ada3a0ee3d616b647a29d3253a5a03fd0ef666bed9a9ab6eb8"></a>NOTHING&#160;</td><td class="fielddoc"><p>sleep </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="af84ff48f1ea8053222ec3db499c1d37f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af84ff48f1ea8053222ec3db499c1d37f">&#9670;&nbsp;</a></span>change_picture()</h2>
 

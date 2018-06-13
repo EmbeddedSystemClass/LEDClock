@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['picture',['PICTURE',['../struct_p_i_c_t_u_r_e.html',1,'']]],
-  ['picture_5ftim',['PICTURE_TIM',['../struct_p_i_c_t_u_r_e___t_i_m.html',1,'']]],
-  ['pictures_2eh',['pictures.h',['../pictures_8h.html',1,'']]],
-  ['pin',['pin',['../struct_l_e_d.html#aead8c9f9715ef925eafc34151b6fbdfb',1,'LED::pin()'],['../struct_l_e_d___l_a_t_c_h.html#a2697d547dbb223948a1d20456db05bef',1,'LED_LATCH::pin()']]]
+  ['ratio_5ftime',['ratio_time',['../struct_e_n_g_i_n_e___t_i_m.html#a95cf5aa7e6af5d643323cce7724a29f4',1,'ENGINE_TIM']]],
+  ['resolution',['resolution',['../struct_p_i_c_t_u_r_e___t_i_m.html#a3d06b455814460a24c468ebcd99d3816',1,'PICTURE_TIM']]],
+  ['resolution_5ftime',['resolution_time',['../struct_p_i_c_t_u_r_e___t_i_m.html#ae44652306b65f37915c24a4c344733b5',1,'PICTURE_TIM']]]
 ];

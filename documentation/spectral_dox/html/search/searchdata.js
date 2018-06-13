@@ -1,13 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "_cdeghilmnprstu",
+  0: "_cdeghilmprstuw",
   1: "elp",
   2: "cmpst",
   3: "_cilmstu",
-  4: "dghlprs",
-  5: "lsu",
-  6: "cnu",
-  7: "s"
+  4: "dghlprsw",
+  5: "lu",
+  6: "s"
 };
 
 var indexSectionNames =
@@ -18,8 +17,7 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "enums",
-  6: "enumvalues",
-  7: "pages"
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -30,7 +28,6 @@ var indexSectionLabels =
   3: "Functions",
   4: "Variables",
   5: "Enumerations",
-  6: "Enumerator",
-  7: "Pages"
+  6: "Pages"
 };
 

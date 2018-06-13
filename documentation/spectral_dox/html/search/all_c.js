@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['spectral_20clock',['Spectral Clock',['../index.html',1,'']]],
-  ['service_2ec',['service.c',['../service_8c.html',1,'']]],
-  ['service_2eh',['service.h',['../service_8h.html',1,'']]],
-  ['state',['STATE',['../service_8h.html#a275a67132f10277ada3a0ee3d616b647',1,'service.h']]],
-  ['step',['step',['../struct_p_i_c_t_u_r_e.html#a1073fabddc8e98b0ca92bed4f7242e3f',1,'PICTURE']]],
-  ['systemclock_5fconfig',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
+  ['test_2ec',['test.c',['../test_8c.html',1,'']]],
+  ['test_2eh',['test.h',['../test_8h.html',1,'']]],
+  ['test_5fleds_5fand_5flatch',['test_leds_and_latch',['../test_8h.html#a398a1337e026fcddc7803e9c58221a12',1,'test_leds_and_latch(void):&#160;test.c'],['../test_8c.html#af243121e0591c7f60c247dc0b7b53b75',1,'test_leds_and_latch():&#160;test.c']]],
+  ['test_5fpower_5fsuply',['test_power_suply',['../test_8h.html#a38f515c53a2aec7acb5750f19cfdada7',1,'test_power_suply(void):&#160;test.c'],['../test_8c.html#a8d7d1663164f751391b2ba0bfe2f0454',1,'test_power_suply():&#160;test.c']]]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['ratio_5ftime',['ratio_time',['../struct_e_n_g_i_n_e___t_i_m.html#a95cf5aa7e6af5d643323cce7724a29f4',1,'ENGINE_TIM']]],
-  ['resolution',['resolution',['../struct_p_i_c_t_u_r_e___t_i_m.html#a3d06b455814460a24c468ebcd99d3816',1,'PICTURE_TIM']]],
-  ['resolution_5ftime',['resolution_time',['../struct_p_i_c_t_u_r_e___t_i_m.html#ae44652306b65f37915c24a4c344733b5',1,'PICTURE_TIM']]]
+  ['spectral_20clock',['Spectral Clock',['../index.html',1,'']]],
+  ['service_2ec',['service.c',['../service_8c.html',1,'']]],
+  ['service_2eh',['service.h',['../service_8h.html',1,'']]],
+  ['step',['step',['../struct_p_i_c_t_u_r_e.html#a1073fabddc8e98b0ca92bed4f7242e3f',1,'PICTURE']]],
+  ['systemclock_5fconfig',['SystemClock_Config',['../main_8c.html#a70af21c671abfcc773614a9a4f63d920',1,'main.c']]]
 ];

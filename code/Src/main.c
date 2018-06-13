@@ -57,7 +57,7 @@ UART_HandleTypeDef huart1;
 /* Private variables ---------------------------------------------------------*/
 led_latch_t U2_upper;
 led_latch_t U19_lower;
-state_t state;
+events_t events;
 engine_tim_t engine_tim;
 picture_tim_t picture_tim;
 picture_t picture;
@@ -80,6 +80,10 @@ static void MX_TIM3_Init(void);
 /* USER CODE BEGIN 0 */
 void init()
 {
+	events.was_bluetooth_event = false;
+	events.was_engine_event = false;
+	events.was_leds_event = false;
+	
 	// U2
 	U2_upper.GPIOx = GPIOB;
 	U2_upper.pin = GPIO_PIN_10;
@@ -89,9 +93,6 @@ void init()
 	U19_lower.pin = GPIO_PIN_11;
 	
 	init_leds();
-	
-	// begin state
-	state = NOTHING;
 	
 	// engine
 	engine_tim.ratio_time = 0;
@@ -256,54 +257,30 @@ int main(void)
 	//test_leds_and_latch();
   while (1)
   {
-		switch(state)
+		if(events.was_bluetooth_event)
 		{
-			case UPDATE_LEDS:
-			{
-				update_leds(picture);
-				
-				picture.step++; // dodaje dwa razy czyli dwa razy wchodzi w ta funkcje w jednym kacie
+			change_picture(buffer[0], &picture);
 
-				if(picture.step == RESOLUTION)
-				{
-					picture.step = 0;
-				}
+			HAL_UART_Receive_IT(&huart1, buffer, sizeof(buffer) / sizeof(uint8_t));
+			
+			events.was_bluetooth_event = false;
+		}
+		if(events.was_engine_event)
+		{
+			update_resolution_time(&engine_tim, &picture_tim);
+			events.was_engine_event = false;
+		}
+		if(events.was_leds_event)
+		{
+			update_leds(picture);
 				
-				if(state != UPDATE_RESOLUTION_TIME && state != CHANGE_PICTURE)
-				{
-					state = NOTHING;
-				}
-				
-				break;
-			}
-			case UPDATE_RESOLUTION_TIME:
-			{				
-				update_resolution_time(&engine_tim, &picture_tim);
-				
-				if(state != UPDATE_LEDS && state != CHANGE_PICTURE)
-				{
-					state = NOTHING;
-				}
-				
-				break;
-			}
-			case CHANGE_PICTURE:
-			{	
-				change_picture(buffer[0], &picture);
+			picture.step++; // dodaje dwa razy czyli dwa razy wchodzi w ta funkcje w jednym kacie
 
-				HAL_UART_Receive_IT(&huart1, buffer, sizeof(buffer) / sizeof(uint8_t));
-				
-				if(state != UPDATE_LEDS && state != UPDATE_RESOLUTION_TIME)
-				{
-					state = NOTHING;
-				}
-				
-				break;
-			}
-			case NOTHING:
+			if(picture.step == RESOLUTION)
 			{
-				break;
+				picture.step = 0;
 			}
+			events.was_leds_event = false;
 		}
   /* USER CODE END WHILE */
 

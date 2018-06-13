@@ -12,20 +12,7 @@
 
 #include "stm32f1xx_hal.h"
 #include "pictures.h"
-
-/** 
- * @enum STATE
- * @brief Updating in particular callbacks. Directs the program execution.
- * @var STATE::UPDATE_LEDS 
- * update led information by the data from image
- * @var STATE::UPDATE_RESOLUTION_TIME 
- * update resolution time when response from sensor
- * @var STATE::CHANGE_PICTURE 
- * change picture depending on user command by bluetooth
- * @var STATE::NOTHING 
- * sleep
- */
-typedef enum STATE {UPDATE_LEDS, UPDATE_RESOLUTION_TIME, CHANGE_PICTURE, NOTHING} state_t;
+#include "stdbool.h"
 
 /** 
  * @enum UPPER_LEDS
@@ -101,6 +88,22 @@ typedef struct PICTURE_TIM
 	
 	TIM_HandleTypeDef *htim;
 } picture_tim_t;
+
+/** @struct EVENTS
+ *  @brief events updated by particular callbacks. Directs the program execution.
+ *  @var EVENTS::was_leds_event 
+ *  event occured from picture timer. Update led information by the data from image
+ *  @var EVENTS::was_engine_event 
+ *  event occured from engine timer - update resolution time when response from sensor
+ *  @var EVENTS::was_bluetooth_event 
+ *  event occured from uart so change picture depending on user command by bluetooth
+ */
+typedef struct EVENTS
+{
+	bool was_leds_event;
+	bool was_engine_event;
+	bool was_bluetooth_event;
+} events_t;
 
 /** @struct PICTURE
  *  @brief the picture displayed by leds

@@ -7,6 +7,7 @@ service header file.
 
 {\ttfamily \#include \char`\"{}stm32f1xx\+\_\+hal.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}pictures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdbool.\+h\char`\"{}}\newline
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
@@ -18,13 +19,12 @@ struct \mbox{\hyperlink{struct_e_n_g_i_n_e___t_i_m}{E\+N\+G\+I\+N\+E\+\_\+\+T\+I
 \begin{DoxyCompactList}\small\item\em struct represanting timer for counting the time of whole ratio \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_p_i_c_t_u_r_e___t_i_m}{P\+I\+C\+T\+U\+R\+E\+\_\+\+T\+IM}}
 \begin{DoxyCompactList}\small\item\em struct represanting timer for counting the time of leds switching on in smallest angle \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_e_v_e_n_t_s}{E\+V\+E\+N\+TS}}
+\begin{DoxyCompactList}\small\item\em events updated by particular callbacks. Directs the program execution. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{struct_p_i_c_t_u_r_e}{P\+I\+C\+T\+U\+RE}}
 \begin{DoxyCompactList}\small\item\em the picture displayed by leds \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{service_8h_af18ba74dd9300c9f8469b5c6be185a09}\label{service_8h_af18ba74dd9300c9f8469b5c6be185a09}} 
-typedef enum \mbox{\hyperlink{service_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE}} {\bfseries state\+\_\+t}
 \item 
 \mbox{\Hypertarget{service_8h_a3bc85e390d8bdf7f1bd2c8ca4321f921}\label{service_8h_a3bc85e390d8bdf7f1bd2c8ca4321f921}} 
 typedef struct \mbox{\hyperlink{struct_l_e_d}{L\+ED}} {\bfseries led\+\_\+t}
@@ -38,18 +38,15 @@ typedef struct \mbox{\hyperlink{struct_e_n_g_i_n_e___t_i_m}{E\+N\+G\+I\+N\+E\+\_
 \mbox{\Hypertarget{service_8h_ac4c59e9cf70b4e13db53a00024206977}\label{service_8h_ac4c59e9cf70b4e13db53a00024206977}} 
 typedef struct \mbox{\hyperlink{struct_p_i_c_t_u_r_e___t_i_m}{P\+I\+C\+T\+U\+R\+E\+\_\+\+T\+IM}} {\bfseries picture\+\_\+tim\+\_\+t}
 \item 
+\mbox{\Hypertarget{service_8h_a863c19c9c2f22633745ce44148219b15}\label{service_8h_a863c19c9c2f22633745ce44148219b15}} 
+typedef struct \mbox{\hyperlink{struct_e_v_e_n_t_s}{E\+V\+E\+N\+TS}} {\bfseries events\+\_\+t}
+\item 
 \mbox{\Hypertarget{service_8h_ac96f7304a68ddcffc2e3a0bfaf6c185d}\label{service_8h_ac96f7304a68ddcffc2e3a0bfaf6c185d}} 
 typedef struct \mbox{\hyperlink{struct_p_i_c_t_u_r_e}{P\+I\+C\+T\+U\+RE}} {\bfseries picture\+\_\+t}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{service_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE}} \{ \mbox{\hyperlink{service_8h_a275a67132f10277ada3a0ee3d616b647a2baba0b3551129dcfa700e0459e4de60}{U\+P\+D\+A\+T\+E\+\_\+\+L\+E\+DS}}, 
-\mbox{\hyperlink{service_8h_a275a67132f10277ada3a0ee3d616b647ab5a06561b0ee9381d980577efd75b173}{U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+T\+I\+ME}}, 
-\mbox{\hyperlink{service_8h_a275a67132f10277ada3a0ee3d616b647ab89bb7f45fc6ff1427d119277d354849}{C\+H\+A\+N\+G\+E\+\_\+\+P\+I\+C\+T\+U\+RE}}, 
-\mbox{\hyperlink{service_8h_a275a67132f10277ada3a0ee3d616b647a29d3253a5a03fd0ef666bed9a9ab6eb8}{N\+O\+T\+H\+I\+NG}}
- \}
-\begin{DoxyCompactList}\small\item\em Updating in particular callbacks. Directs the program execution. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{service_8h_a7382d51d8dba53a32f99083d61a485af}\label{service_8h_a7382d51d8dba53a32f99083d61a485af}} 
 enum \mbox{\hyperlink{service_8h_a7382d51d8dba53a32f99083d61a485af}{U\+P\+P\+E\+R\+\_\+\+L\+E\+DS}} \{ \newline
 {\bfseries U9}, 
@@ -101,37 +98,6 @@ Jakub Wieczorek \href{mailto:jakub.wieczorek0101@gmail.com}{\tt jakub.\+wieczore
 \begin{DoxyVersion}{Version}
 1.\+0 
 \end{DoxyVersion}
-
-
-\subsection{Enumeration Type Documentation}
-\mbox{\Hypertarget{service_8h_a275a67132f10277ada3a0ee3d616b647}\label{service_8h_a275a67132f10277ada3a0ee3d616b647}} 
-\index{service.\+h@{service.\+h}!S\+T\+A\+TE@{S\+T\+A\+TE}}
-\index{S\+T\+A\+TE@{S\+T\+A\+TE}!service.\+h@{service.\+h}}
-\subsubsection{\texorpdfstring{S\+T\+A\+TE}{STATE}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{service_8h_a275a67132f10277ada3a0ee3d616b647}{S\+T\+A\+TE}}}
-
-
-
-Updating in particular callbacks. Directs the program execution. 
-
-\begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+P\+D\+A\+T\+E\+\_\+\+L\+E\+DS@{U\+P\+D\+A\+T\+E\+\_\+\+L\+E\+DS}!service.\+h@{service.\+h}}\index{service.\+h@{service.\+h}!U\+P\+D\+A\+T\+E\+\_\+\+L\+E\+DS@{U\+P\+D\+A\+T\+E\+\_\+\+L\+E\+DS}}}\mbox{\Hypertarget{service_8h_a275a67132f10277ada3a0ee3d616b647a2baba0b3551129dcfa700e0459e4de60}\label{service_8h_a275a67132f10277ada3a0ee3d616b647a2baba0b3551129dcfa700e0459e4de60}} 
-U\+P\+D\+A\+T\+E\+\_\+\+L\+E\+DS&update led information by the data from image \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+T\+I\+ME@{U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+T\+I\+ME}!service.\+h@{service.\+h}}\index{service.\+h@{service.\+h}!U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+T\+I\+ME@{U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+T\+I\+ME}}}\mbox{\Hypertarget{service_8h_a275a67132f10277ada3a0ee3d616b647ab5a06561b0ee9381d980577efd75b173}\label{service_8h_a275a67132f10277ada3a0ee3d616b647ab5a06561b0ee9381d980577efd75b173}} 
-U\+P\+D\+A\+T\+E\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+T\+I\+ME&update resolution time when response from sensor \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+H\+A\+N\+G\+E\+\_\+\+P\+I\+C\+T\+U\+RE@{C\+H\+A\+N\+G\+E\+\_\+\+P\+I\+C\+T\+U\+RE}!service.\+h@{service.\+h}}\index{service.\+h@{service.\+h}!C\+H\+A\+N\+G\+E\+\_\+\+P\+I\+C\+T\+U\+RE@{C\+H\+A\+N\+G\+E\+\_\+\+P\+I\+C\+T\+U\+RE}}}\mbox{\Hypertarget{service_8h_a275a67132f10277ada3a0ee3d616b647ab89bb7f45fc6ff1427d119277d354849}\label{service_8h_a275a67132f10277ada3a0ee3d616b647ab89bb7f45fc6ff1427d119277d354849}} 
-C\+H\+A\+N\+G\+E\+\_\+\+P\+I\+C\+T\+U\+RE&change picture depending on user command by bluetooth \\
-\hline
-
-\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+T\+H\+I\+NG@{N\+O\+T\+H\+I\+NG}!service.\+h@{service.\+h}}\index{service.\+h@{service.\+h}!N\+O\+T\+H\+I\+NG@{N\+O\+T\+H\+I\+NG}}}\mbox{\Hypertarget{service_8h_a275a67132f10277ada3a0ee3d616b647a29d3253a5a03fd0ef666bed9a9ab6eb8}\label{service_8h_a275a67132f10277ada3a0ee3d616b647a29d3253a5a03fd0ef666bed9a9ab6eb8}} 
-N\+O\+T\+H\+I\+NG&sleep \\
-\hline
-
-\end{DoxyEnumFields}
 
 
 \subsection{Function Documentation}

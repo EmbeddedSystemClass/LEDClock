@@ -30,3 +30,4 @@ spectral_clock_hal\callbacks.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ha
 spectral_clock_hal\callbacks.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 spectral_clock_hal\callbacks.o: ../Inc/service.h
 spectral_clock_hal\callbacks.o: ../Inc/pictures.h
+spectral_clock_hal\callbacks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
