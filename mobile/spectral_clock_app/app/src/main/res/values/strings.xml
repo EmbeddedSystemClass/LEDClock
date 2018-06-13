@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">spectral_clock_app</string>
+    <string name="clock">clock</string>
+    <string name="onyks">onyks</string>
+    <string name="angle">angle</string>
+    <string name="connect">connect</string>
+    <string name="disconnectButton">disconnect</string>
+</resources>
