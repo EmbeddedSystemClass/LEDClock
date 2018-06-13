@@ -9,6 +9,7 @@
 
 #include "service.h"
 #include "stdbool.h"
+#include "pictures.h"
 
 extern led_latch_t U2_upper;
 extern led_latch_t U19_lower;
@@ -50,4 +51,21 @@ void update_resolution_time(engine_tim_t *a_engine_tim, picture_tim_t *a_picture
 	a_picture_tim->htim->Instance->CNT = 0;
 	a_engine_tim->htim->Instance->CNT = 0;
 	__HAL_TIM_SET_AUTORELOAD(a_picture_tim->htim, a_picture_tim->resolution_time);
+}
+
+void change_picture(uint8_t a_picture_idx, picture_t *a_picture)
+{
+	if(a_picture_idx == 'A')
+	{
+		a_picture->data = SMALLEST_ANGLE_360;
+	} else if(a_picture_idx == 'B')
+	{
+		a_picture->data = CLOCK;
+	}
+	else if(a_picture_idx == 'C')
+	{
+		a_picture->data = ONYKS;
+	}
+
+	a_picture->step = 0;
 }

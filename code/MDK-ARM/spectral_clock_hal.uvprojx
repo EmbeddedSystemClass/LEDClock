@@ -500,6 +500,11 @@
               <FileType>1</FileType>
               <FilePath>..\Src\service.c</FilePath>
             </File>
+            <File>
+              <FileName>pictures.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\pictures.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

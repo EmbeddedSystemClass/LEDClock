@@ -11,6 +11,7 @@
 #define SERVICE_H
 
 #include "stm32f1xx_hal.h"
+#include "pictures.h"
 
 /** 
  * @enum STATE
@@ -111,7 +112,7 @@ typedef struct PICTURE_TIM
  */
 typedef struct PICTURE
 {
-	uint8_t (*data)[360];
+	uint8_t (*data)[RESOLUTION];
 	int step;
 } picture_t;
 
@@ -141,4 +142,14 @@ void update_leds(picture_t a_picture);
  */
 void update_resolution_time(engine_tim_t *a_engine, picture_tim_t *a_picture_tim);
 
+/** 
+ *  @brief change picture
+ * 	'A' -> HALF_WHEEL
+ *  'B' -> CLOCK
+ *  'C' -> ONYKS
+ *  @param a_picture_idx uint8_t a_picture_idx above indexes
+ *  @param a_picture picture_t a_picture pointer to picture_t instance it will be update in function
+ *  @see PICTURE
+ */
+void change_picture(uint8_t a_picture_idx, picture_t *a_picture);
 #endif

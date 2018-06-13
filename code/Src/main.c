@@ -109,7 +109,7 @@ void init()
 
 	
 	// init picture 
-	picture.data = CLOCK;
+	picture.data = ONYKS;
 	picture.step = 0;
 }
 
@@ -288,17 +288,11 @@ int main(void)
 				break;
 			}
 			case CHANGE_PICTURE:
-			{				
-				if(buffer[0] == 'A')
-				{
-					picture.data = HALF_WHEEL;
-				} else if(buffer[0] == 'B')
-				{
-					picture.data = CLOCK;
-				}
-				picture.step = 0;
-				
+			{	
+				change_picture(buffer[0], &picture);
+
 				HAL_UART_Receive_IT(&huart1, buffer, sizeof(buffer) / sizeof(uint8_t));
+				
 				if(state != UPDATE_LEDS && state != UPDATE_RESOLUTION_TIME)
 				{
 					state = NOTHING;
