@@ -1,0 +1,178 @@
+Protel Design System Design Rule Check
+PCB File : F:\Projects\SMS\spectral_clock\schema\spectral_clock\spectral_clock.PcbDoc
+Date     : 2018-11-07
+Time     : 18:05:29
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: POLY_BOTTOM1 In net GND On Bottom Layer
+   Polygon named: POLY_TOP1 In net GND On Top Layer
+   Polygon named: POLY_TOP1 In net GND On Top Layer
+
+Processing Rule : Clearance Constraint (Gap=0.127mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad C23-1(308.404mm,337.11mm) on Top Layer And Pad U19-1(315.15mm,349.125mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C38-1(329.804mm,263.21mm) on Top Layer And Pad U40-31(329.85mm,254.65mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad C4-1(312.546mm,363.51mm) on Top Layer And Pad U19-1(315.15mm,349.125mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad C4-1(312.546mm,363.51mm) on Top Layer And Pad U2-1(315.55mm,371.325mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad CON1-1(345.7mm,297.1mm) on Multi-Layer And Pad LED19-2(378mm,298.8mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED10_1 Between Pad U2-15(321.65mm,368.075mm) on Top Layer And Pad LED10-1(327.65mm,370.1mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED9-2(329.25mm,372.7mm) on Top Layer And Pad LED10-2(329.35mm,370.1mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED11_1 Between Pad U2-14(321.65mm,367.425mm) on Top Layer And Pad LED11-1(328.05mm,366.7mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED12_1 Between Pad U2-13(321.65mm,366.775mm) on Top Layer And Pad LED12-1(328.55mm,360.6mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED13_1 Between Pad U2-12(321.65mm,366.125mm) on Top Layer And Pad LED13-1(328.55mm,357.7mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED14_1 Between Pad U19-19(321.25mm,348.475mm) on Top Layer And Pad LED14-1(376.3mm,255.6mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED14-2(378mm,255.6mm) on Top Layer And Pad LED15-2(378mm,264.2mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED15_1 Between Pad U19-18(321.25mm,347.825mm) on Top Layer And Pad LED15-1(376.3mm,264.2mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED15-2(378mm,264.2mm) on Top Layer And Pad LED16-2(378mm,272.9mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED16_1 Between Pad U19-17(321.25mm,347.175mm) on Top Layer And Pad LED16-1(376.3mm,272.9mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED16-2(378mm,272.9mm) on Top Layer And Pad LED17-2(378mm,281.5mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED17_1 Between Pad U19-16(321.25mm,346.525mm) on Top Layer And Pad LED17-1(376.3mm,281.5mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED17-2(378mm,281.5mm) on Top Layer And Pad LED18-2(378mm,290.1mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED18_1 Between Pad U19-15(321.25mm,345.875mm) on Top Layer And Pad LED18-1(376.3mm,290.1mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED18-2(378mm,290.1mm) on Top Layer And Pad LED19-2(378mm,298.8mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED19_1 Between Pad U19-14(321.25mm,345.225mm) on Top Layer And Pad LED19-1(376.3mm,298.8mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED19-2(378mm,298.8mm) on Top Layer And Pad LED20-2(378mm,307.7mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED20_1 Between Pad U19-13(321.25mm,344.575mm) on Top Layer And Pad LED20-1(376.3mm,307.7mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad LED20-2(378mm,307.7mm) on Top Layer And Pad LED21-2(378mm,316.1mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED21_1 Between Pad U19-12(321.25mm,343.925mm) on Top Layer And Pad LED21-1(376.3mm,316.1mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED6_1 Between Pad U2-19(321.65mm,370.675mm) on Top Layer And Pad LED6-1(327.95mm,380.7mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED7_1 Between Pad U2-18(321.65mm,370.025mm) on Top Layer And Pad LED7-1(327.95mm,378.8mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED8_1 Between Pad U2-17(321.65mm,369.375mm) on Top Layer And Pad LED8-1(327.95mm,376.4mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED9_1 Between Pad U2-16(321.65mm,368.725mm) on Top Layer And Pad LED9-1(327.55mm,372.7mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad U19-1(315.15mm,349.125mm) on Top Layer And Pad U19-20(321.25mm,349.125mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net A0 Between Track (311.1mm,279.2mm)(311.1mm,305.003mm) on Bottom Layer And Pad U19-10(315.15mm,343.275mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D1 Between Pad U19-2(315.15mm,348.475mm) on Top Layer And Pad U2-2(315.55mm,370.675mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D1 Between Pad U19-2(315.15mm,348.475mm) on Top Layer And Track (323.7mm,301.8mm)(341mm,284.5mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad U19-20(321.25mm,349.125mm) on Top Layer And Track (335.1mm,292.2mm)(335.1mm,335.3mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D2 Between Pad U19-3(315.15mm,347.825mm) on Top Layer And Pad U2-3(315.55mm,370.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D2 Between Pad U19-3(315.15mm,347.825mm) on Top Layer And Track (322.811mm,301.189mm)(339.8mm,284.2mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D3 Between Pad U19-4(315.15mm,347.175mm) on Top Layer And Pad U2-4(315.55mm,369.375mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D3 Between Pad U19-4(315.15mm,347.175mm) on Top Layer And Track (321.922mm,300.578mm)(338.9mm,283.6mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D4 Between Pad U19-5(315.15mm,346.525mm) on Top Layer And Pad U2-5(315.55mm,368.725mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D4 Between Pad U19-5(315.15mm,346.525mm) on Top Layer And Track (321.033mm,300.21mm)(338.011mm,283.232mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D5 Between Pad U19-6(315.15mm,345.875mm) on Top Layer And Pad U2-6(315.55mm,368.075mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D5 Between Pad U19-6(315.15mm,345.875mm) on Top Layer And Track (320.144mm,299.842mm)(337.122mm,282.864mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D6 Between Pad U19-7(315.15mm,345.225mm) on Top Layer And Pad U2-7(315.55mm,367.425mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D6 Between Pad U19-7(315.15mm,345.225mm) on Top Layer And Track (319.255mm,299.473mm)(336.233mm,282.495mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D7 Between Pad U19-8(315.15mm,344.575mm) on Top Layer And Pad U2-8(315.55mm,366.775mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D7 Between Pad U19-8(315.15mm,344.575mm) on Top Layer And Track (318.366mm,299.105mm)(335.344mm,282.127mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D8 Between Pad U19-9(315.15mm,343.925mm) on Top Layer And Pad U2-9(315.55mm,366.125mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D8 Between Pad U19-9(315.15mm,343.925mm) on Top Layer And Track (317.477mm,298.737mm)(334.455mm,281.759mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net VCC Between Pad U2-1(315.55mm,371.325mm) on Top Layer And Pad U2-20(321.65mm,371.325mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net A1 Between Pad U2-10(315.55mm,365.475mm) on Top Layer And Track (316.779mm,298.448mm)(333.7mm,281.526mm) on Bottom Layer 
+Rule Violations :50
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+   Violation between Modified Polygon: Polygon Shelved  (POLY_BOTTOM1) on Bottom Layer 
+   Violation between Modified Polygon: Polygon Shelved  (POLY_TOP1) on Top Layer 
+Rule Violations :2
+
+Processing Rule : Width Constraint (Min=0.127mm) (Max=2.54mm) (Preferred=0.762mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.153mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=6.5mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.125mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (0.118mm < 0.125mm) Between Pad R3-2(332.838mm,203.5mm) on Bottom Layer And Track (333.956mm,201.722mm)(333.956mm,205.278mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.118mm]
+Rule Violations :1
+
+Processing Rule : Silk to Silk (Clearance=0.125mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+   Violation between Net Antennae: Track (311.1mm,279.2mm)(311.1mm,305.003mm) on Bottom Layer 
+   Violation between Net Antennae: Track (316.779mm,298.448mm)(333.7mm,281.526mm) on Bottom Layer 
+   Violation between Net Antennae: Track (317.477mm,298.737mm)(334.455mm,281.759mm) on Bottom Layer 
+   Violation between Net Antennae: Track (318.366mm,299.105mm)(335.344mm,282.127mm) on Bottom Layer 
+   Violation between Net Antennae: Track (319.255mm,299.473mm)(336.233mm,282.495mm) on Bottom Layer 
+   Violation between Net Antennae: Track (320.144mm,299.842mm)(337.122mm,282.864mm) on Bottom Layer 
+   Violation between Net Antennae: Track (321.033mm,300.21mm)(338.011mm,283.232mm) on Bottom Layer 
+   Violation between Net Antennae: Track (321.922mm,300.578mm)(338.9mm,283.6mm) on Bottom Layer 
+   Violation between Net Antennae: Track (322.811mm,301.189mm)(339.8mm,284.2mm) on Bottom Layer 
+   Violation between Net Antennae: Track (323.7mm,301.8mm)(341mm,284.5mm) on Bottom Layer 
+   Violation between Net Antennae: Track (335.1mm,292.2mm)(335.1mm,335.3mm) on Bottom Layer 
+Rule Violations :11
+
+Processing Rule : Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock'))
+   Violation between Room Definition: Between Component U38-LD1117AS33TR (335mm,273.4mm) on Top Layer And Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) 
+   Violation between Room Definition: Between Component U39-HC05 (322.6mm,194.35mm) on Top Layer And Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) 
+   Violation between Room Definition: Between LCC Component U40-STM32F103RBT6TR (324.1mm,251.4mm) on Top Layer And Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SIP Component P1-HDR1X5 (304.8mm,282.86mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And Small Component CON1-ARK2 (342.6mm,299.6mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And Small Component JP1-Jumper (299.9mm,194.5mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And Small Component JP2-Jumper (304.5mm,194.5mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And Small Component Q1-Phototransistor (321.455mm,203.347mm) on Bottom Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C10-1uF (331.84mm,258.96mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C11-Cap (317.4mm,241.8mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C23-Cap (308.4mm,336.3mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C38-Cap (329.8mm,262.4mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C39-Cap (314.31mm,247.596mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C40-Cap (334.2mm,243mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C41-Cap (317mm,260.5mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C42-1uF (338.56mm,234.04mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C43-Cap (340mm,237.1mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C44-Cap (312.9mm,224.1mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C45-Cap (342mm,224.2mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C46-Cap (336.61mm,193.796mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C47-Cap (316.5mm,203.3mm) on Bottom Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C48-Cap (333mm,224.2mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component C4-Cap (312.543mm,362.7mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component L1-10uH (343.804mm,237.01mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED10-RED (328.5mm,370.1mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED11-RED (328.9mm,366.7mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED12-RED (329.4mm,360.6mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED13-RED (329.4mm,357.7mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED14-RED (377.15mm,255.6mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED15-RED (377.15mm,264.2mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED16-RED (377.15mm,272.9mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED17-RED (377.15mm,281.5mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED18-RED (377.15mm,290.1mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED19-RED (377.15mm,298.8mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED1-RED (301.2mm,216.15mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED20-RED (377.15mm,307.7mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED21-RED (377.15mm,316.1mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED2-BLUE (306mm,216.4mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED3-=GREEN (301.1mm,240.17mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED4-RED (304.5mm,240.2mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED5-RED (308.3mm,240.2mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED6-RED (328.8mm,380.7mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED7-RED (328.8mm,378.8mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED8-RED (328.8mm,376.4mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component LED9-RED (328.4mm,372.7mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component R1-470 (301.17mm,205.29mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component R2-470 (306mm,205.2mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component R3-100k (330.4mm,203.5mm) on Bottom Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component R4-470 (301.1mm,245.71mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component R5-470 (304.5mm,245.79mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component R6-470 (308.3mm,245.8mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component SW1-Micro_Switch (303.4mm,265.8mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SMT Small Component X1 (322.851mm,224.198mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SOIC Component U19-TLC59210IPWR (318.2mm,346.2mm) on Top Layer 
+   Violation between Room Definition: Between Room spectral_clock (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('spectral_clock')) And SOIC Component U2-TLC59210IPWR (318.6mm,368.4mm) on Top Layer 
+Rule Violations :55
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 119
+Waived Violations : 0
+Time Elapsed        : 00:00:00
