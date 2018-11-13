@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : F:\Projects\SMS\spectral_clock\schema\spectral_clock\spectral_clock.PcbDoc
-Date     : 2018-11-12
-Time     : 13:35:45
+Date     : 2018-11-13
+Time     : 10:56:53
 
 Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
 Rule Violations :0
@@ -10,15 +10,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U2-11(12815.409mil,13546.244mil) on Top Layer And Pad C23-2(12817.236mil,13390.142mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net VCC Between Pad C46-1(12451.63mil,12515.874mil) on Bottom Layer And Via (12549.636mil,12964.524mil) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net TS Between Pad C47-2(12376.575mil,13957.071mil) on Bottom Layer And Pad U40-14(12890.212mil,12395.654mil) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U19-11(12815.409mil,13010.811mil) on Top Layer And Pad U38-1(12957.142mil,12956.677mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net VCC Between Pad U2-20(12815.409mil,13776.559mil) on Top Layer And Via (12825.252mil,13499.984mil) from Top Layer to Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net UART4_RX Between Pad U40-43(12437.457mil,12238.173mil) on Top Layer And Pad U39-1(12567.363mil,11791.323mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net UART4_TX Between Pad U40-42(12437.457mil,12257.858mil) on Top Layer And Pad U39-2(12567.363mil,11850.378mil) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net 3V3 Between Track (12360.543mil,12138.173mil)(12364.622mil,12142.252mil) on Top Layer And Via (12364.622mil,12228.331mil) from Top Layer to Bottom Layer 
-Rule Violations :8
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -54,6 +46,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 8
+Violations Detected : 0
 Waived Violations : 0
 Time Elapsed        : 00:00:01
