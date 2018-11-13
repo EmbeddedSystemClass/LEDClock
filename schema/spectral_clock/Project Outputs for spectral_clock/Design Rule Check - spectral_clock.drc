@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : F:\Projects\SMS\spectral_clock\schema\spectral_clock\spectral_clock.PcbDoc
 Date     : 2018-11-13
-Time     : 10:56:53
+Time     : 12:54:13
 
 Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
 Rule Violations :0
@@ -48,4 +48,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:00
