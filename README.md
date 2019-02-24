@@ -8,9 +8,9 @@ Spectral clock is a device which consist of a bar with over a dozen of leds atta
 ## Project structure
 The Spectral Clock project consist of a few connected parts, because it isn't itself only a software. The project is divided into:
 
-| **Hardware**     | **Electronic subproject**     | **Mobile app**           |
-|-------------------------------------|-------------------------------|-----------------------------------|
-| aaa | bbb | ccc |
+| **Hardware**     | **Microcontroller**     | **PCBs**           | **Mobile app** |
+|-------------------------------------|-------------------------------|-----------------------------------|-----------------------------------|
+| Engine, connection between parts, wood case and different harware stuff related to the device construction| STM32 project written in HAL library help and STMCubeMX generator which has the logic responsible for controlling the image displayed by leds| Clock's bar designed in Altium environment with the microcontroller, leds and rest electronic elements. Also PCB for BLDC controller | The user interface which is Android mobile application written in Java. Enables changing the images by user remotly via bluetooth |
 
 ## Copyright and license
 Spectral Clock project is copyright to Jakub Wieczorek under the [MIT License](https://opensource.org/licenses/MIT).
