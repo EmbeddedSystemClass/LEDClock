@@ -5,4 +5,14 @@ Spectral clock is a device which consist of a bar with over a dozen of leds atta
 
 **To find out more, please check out the [spectral clock wiki][wiki].**
 
+## Project structure
+The Spectral Clock project consist of a few connected parts, because it isn't itself only a software. The project is divided into:
+
+| **Hardware**     | **Electronic subproject**     | **Mobile app**           |
+|-------------------------------------|-------------------------------|-----------------------------------|
+| aaa | bbb | ccc |
+
+## Copyright and license
+Spectral Clock project is copyright to Jakub Wieczorek under the [MIT License](https://opensource.org/licenses/MIT).
+
 [wiki]: https://github.com/jakubwieczorek/spectral_clock/wiki
