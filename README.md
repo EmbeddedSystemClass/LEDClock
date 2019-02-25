@@ -10,8 +10,7 @@ The Spectral Clock project consist of a few connected parts, because it isn't it
 
 | **Hardware**     | **Microcontroller**     | **PCBs**           | **Mobile app** |
 |-------------------------------------|-------------------------------|-----------------------------------|-----------------------------------|
-| Engine, connection between parts, wood case and different harware stuff related to the device construction. Check
-[hardware wiki][hardware_wiki]| STM32 project written in HAL library help and STMCubeMX generator which has the logic responsible for controlling the image displayed by leds. Check [microcontroller wiki][microcontroller_wiki]| Clock's bar designed in Altium environment with the microcontroller, leds and rest electronic elements. Also PCB for BLDC controller. Check [PCBs wiki][pcbs_wiki] | The user interface which is Android mobile application written in Java. Enables changing the images by user remotly via bluetooth. Check [mobile app wiki][mobile_wiki] |
+| Engine, connection between parts, wood case and different harware stuff related to the device construction. Check [hardware wiki][hardware_wiki]| STM32 project written in HAL library help and STMCubeMX generator which has the logic responsible for controlling the image displayed by leds. Check [microcontroller wiki][microcontroller_wiki]| Clock's bar designed in Altium environment with the microcontroller, leds and rest electronic elements. Also PCB for BLDC controller. Check [PCBs wiki][pcbs_wiki] | The user interface which is Android mobile application written in Java. Enables changing the images by user remotly via bluetooth. Check [mobile app wiki][mobile_wiki] |
 
 ## Questions or need help?
 Don't hesitate to send me a mail on jakub.wieczorek0101@gmail.com.
