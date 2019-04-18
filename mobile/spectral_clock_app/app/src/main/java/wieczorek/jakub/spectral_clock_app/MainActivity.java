@@ -55,6 +55,15 @@ public class MainActivity extends AppCompatActivity
         enableConnect(true);
     }
 
+    private Boolean connect()
+    {
+        connectButton.setEnabled(false); // cannot disable i dont know why
+        Boolean isConnected = bluetooth.BTconnect();
+        connectButton.setEnabled(true);
+
+        return isConnected;
+    }
+
     private void createOnClickListener()
     {
         this.onClickListener = new View.OnClickListener()
@@ -66,7 +75,8 @@ public class MainActivity extends AppCompatActivity
                 {
                     case R.id.connectButton:
                     {
-                        Boolean isConnected = bluetooth.BTconnect();
+                        Boolean isConnected = connect();
+
                         if(isConnected)
                         {
                             enablePictureButtons(isConnected);

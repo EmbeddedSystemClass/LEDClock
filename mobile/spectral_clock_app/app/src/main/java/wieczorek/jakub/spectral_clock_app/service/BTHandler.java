@@ -46,40 +46,36 @@ public class BTHandler
         {
             //Checks if the device supports bluetooth
             Toast.makeText(appContext, "Device doesn't support bluetooth", Toast.LENGTH_SHORT).show();
+
+            return false;
         }
+
 
         if(!bluetoothAdapter.isEnabled()) //Checks if bluetooth is enabled. If not, the program will ask permission from the user to enable it
         {
             Intent enableAdapter = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             // startActivityForResult(enableAdapter,0);
 
-            try
-            {
-                Thread.sleep(1000);
-            }
-            catch(InterruptedException e)
-            {
-                e.printStackTrace();
-            }
+            Toast.makeText(appContext, "Switch on bluetooth please", Toast.LENGTH_SHORT).show();
+
+            return false;
         }
 
         Set<BluetoothDevice> bondedDevices = bluetoothAdapter.getBondedDevices();
 
-        if(bondedDevices.isEmpty()) //Checks for paired bluetooth devices
+        for(BluetoothDevice bondedDevice : bondedDevices) //Checks for paired bluetooth devices
+        {
+            if(bondedDevice.getAddress().equals(DEVICE_ADDRESS))
+            {
+                device = bondedDevice;
+                found = true;
+                break;
+            }
+        }
+
+        if(!found)
         {
             Toast.makeText(appContext, "Please pair the device first", Toast.LENGTH_SHORT).show();
-        }
-        else
-        {
-            for(BluetoothDevice iterator : bondedDevices)
-            {
-                if(iterator.getAddress().equals(DEVICE_ADDRESS))
-                {
-                    device = iterator;
-                    found = true;
-                    break;
-                }
-            }
         }
 
         return found;
@@ -106,6 +102,17 @@ public class BTHandler
     public boolean BTconnect()
     {
         boolean connected = true;
+
+
+        if(device == null)
+        {
+            this.BTinit();
+        }
+
+        if(device == null)
+        {
+            return false;
+        }
 
         try
         {
