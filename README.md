@@ -18,6 +18,8 @@ In order to change the picture was written dedicated android application.
 
 **To find out more, please check out the [spectral clock wiki][wiki].**
 
+**Video from the action [https://www.youtube.com/watch?v=dwCs7caOApE&feature=youtu.be][yt]**
+
 ## Project structure
 The Spectral Clock project consist of a few connected parts, because it isn't itself only a software. The project is divided into:
 
@@ -32,6 +34,7 @@ Don't hesitate to send me a mail on jakub.wieczorek0101@gmail.com.
 Spectral Clock project is copyright to Jakub Wieczorek under the [MIT License](https://opensource.org/licenses/MIT).
 
 [wiki]: https://github.com/jakubwieczorek/spectral_clock/wiki
+[yt]: https://www.youtube.com/watch?v=dwCs7caOApE&feature=youtu.be
 [hardware_wiki]: https://github.com/jakubwieczorek/spectral_clock/wiki/Hardware
 [microcontroller_wiki]: https://github.com/jakubwieczorek/spectral_clock/wiki/Microcontroller
 [pcbs_wiki]: https://github.com/jakubwieczorek/spectral_clock/wiki/PCBs
