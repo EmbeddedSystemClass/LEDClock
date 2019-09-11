@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/Jakub Wieczorek/Desktop/studia/SMS/spectral_clock/code/Inc
+HeaderPath=F:/Projects/SMS/spectral_clock/code/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=C:/Users/Jakub Wieczorek/Desktop/studia/SMS/spectral_clock/code/Src
+SourcePath=F:/Projects/SMS/spectral_clock/code/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
